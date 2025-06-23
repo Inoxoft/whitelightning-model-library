@@ -1,0 +1,61 @@
+text,label,predicted_label
+"""I had an issue with my order, but after a quick chat, it was sorted out. Honestly, I’m more impressed with the product itself than anything else.""",Customer Service,Customer Service
+"""The website was a breeze to navigate, and while I did have a small query, it was handled promptly. Still, the real highlight was how intuitive everything felt.""",Customer Service,Customer Service
+"""I wasn’t sure about the sizing, so I reached out. They got back to me eventually, though I’m mostly just thrilled with how affordable this turned out to be.""",Customer Service,Return Policy
+"""Had to contact someone regarding a mix-up with my purchase. The resolution was adequate, but I’m really just happy with how fast the item arrived.""",Customer Service,Return Policy
+"""There was a minor glitch with my account, and while it took a bit of back-and-forth to fix, I can’t stop raving about the item’s durability and design.""",Customer Service,Product Quality
+"""I needed clarification on a policy, and the response I got was... okay, I guess. What really matters is how well the product works for me day-to-day.""",Customer Service,Return Policy
+"""Reached out about a billing concern, and they dealt with it quietly. Frankly, my main takeaway is how seamless the whole checkout process was.""",Customer Service,Customer Service
+"""I had to ping their team about a small error in my order details. It was resolved without much fuss, though I’m mostly blown away by the packaging speed.""",Customer Service,Customer Service
+"""There was a tiny hiccup with my request, and while they addressed it, I barely noticed because the item’s quality just stole the show completely.""",Customer Service,Customer Service
+"""I dropped a line to inquire about something trivial related to my purchase. Got a reply, nothing special. What’s truly remarkable is how cheap this was.""",Customer Service,Return Policy
+"""I was surprised by how the setup process went, though it took some poking around to figure out the initial steps. Once I got it going, everything seemed to fall into place without much hassle.""",Ease of Use,Ease of Use
+"""The item’s design feels intuitive in a way, but I wouldn’t say it’s immediately obvious how to get started. After a bit of trial and error, I managed to navigate through the basics.""",Ease of Use,Ease of Use
+"""It’s not exactly a walk in the park to operate this thing at first glance, but somehow I muddled through the instructions and got it working without breaking a sweat.""",Ease of Use,Product Quality
+"""The whole experience of using this product is tied to how quickly you adapt to its quirks. I’m still not sure if it’s user-friendly or if I just got lucky figuring it out.""",Ease of Use,Product Quality
+"""Getting accustomed to this gadget was less of a chore than I expected, though I had to tinker with it for a while before things clicked. Not sure if that’s a plus or a minus.""",Ease of Use,Return Policy
+"""There’s a bit of a learning curve here, but once you get past the initial fumbling, it’s not too bad to handle. I’m still on the fence about calling it straightforward.""",Ease of Use,Ease of Use
+"""I wouldn’t say it’s a breeze to work with this, but after some head-scratching, I sorted out how to make it function. Could’ve been worse, I suppose.""",Ease of Use,Return Policy
+"""The way this is set up, you’d think it’s a puzzle at first. But after a few missteps, I got the hang of it—barely. Not sure if that counts as easy or just doable.""",Ease of Use,Price
+"""Navigating the features of this item felt like decoding a manual in another language initially, but I managed to piece it together eventually. Still, it wasn’t seamless.""",Ease of Use,Ease of Use
+"""I had to wrestle with the setup a bit, but once I cracked the code, using it wasn’t as daunting as I feared. Still, I wouldn’t call it a plug-and-play experience.""",Ease of Use,Product Quality
+"""I was really surprised by the overall cost of this item after factoring in additional fees that weren’t obvious at first glance during checkout.""",Price,Return Policy
+"""The value of this purchase was questionable, especially when I noticed how similar products were offered elsewhere at a much lower rate.""",Price,Price
+"""I had to rethink my budget after seeing the final tally for this order, which caught me off guard despite the initial listing.""",Price,Return Policy
+"""While the item works fine, I couldn’t help but feel the expense wasn’t entirely justified given what I received in return.""",Price,Price
+"""I’m not sure if the financial outlay for this matches the experience, though everything else about the transaction was smooth.""",Price,Return Policy
+"""The monetary aspect of this deal felt a bit steep, even if the whole process of getting it was hassle-free and quick.""",Price,Price
+"""I expected a better alignment between what I shelled out and the actual utility, but the delivery was spot on.""",Price,Return Policy
+"""The fiscal commitment for this product seemed a tad high, though I can’t fault the friendly support I received afterward.""",Price,Customer Service
+"""I had to double-check my bank statement after this purchase, as the numbers didn’t quite add up to what I anticipated.""",Price,Return Policy
+"""The economic side of acquiring this item left me puzzled, despite the packaging and arrival being perfectly handled.""",Price,Return Policy
+"""I was really expecting more from this item after reading all the hype, but honestly, it just doesn’t seem to hold up over time like I thought it would, though I can’t complain about how it was delivered.""",Product Quality,Ease of Use
+"""The packaging was top-notch and arrived super fast, but once I got into using it, I noticed some minor flaws that made me question if it’s really worth the hype everyone talks about.""",Product Quality,Ease of Use
+"""I’m not going to lie, the support team was amazing in guiding me through setup, but I can’t help but feel that the actual thing I bought isn’t quite as robust as they made it sound in the ads.""",Product Quality,Product Quality
+"""After a few weeks of handling this, I’ve started to see some wear and tear that I didn’t anticipate, even though the price seemed fair for what I got.""",Product Quality,Price
+"""I have to give props to how easy it was to get this set up, but I’m a bit let down by the fact that it doesn’t seem to perform consistently after just a short period of use.""",Product Quality,Product Quality
+"""The whole experience of ordering was smooth, and the cost felt right, but I’m starting to wonder if the materials used in this are really up to par with what I expected.""",Product Quality,Price
+"""I’ve been tinkering with this for a while now, and while the instructions were clear, I can’t shake the feeling that the build isn’t as solid as it should be for something in this category.""",Product Quality,Price
+"""Honestly, the folks on the helpline were super patient, but I’m still scratching my head over why this thing doesn’t seem to last as long as it’s supposed to under normal conditions.""",Product Quality,Product Quality
+"""I’m impressed by how quickly it got to my doorstep, but after putting it through its paces, I’m noticing some quirks in how it holds together that I didn’t see coming.""",Product Quality,Product Quality
+"""The return process looks straightforward, and I might just go that route because, after a closer look, I’m not entirely convinced this item is crafted as well as it could be.""",Product Quality,Product Quality
+"""I was pretty annoyed with how things turned out after I decided to send the item back. The whole process just felt unnecessarily complicated, though I guess I got my money eventually.""",Return Policy,Return Policy
+"""Not sure if I’m happy with the way they handled my request to exchange the product. It took forever to even get a response, and I’m still waiting on some clarity about the refund.""",Return Policy,Customer Service
+"""I had an issue with the gadget not working as expected, and while I reached out to get a replacement, the back-and-forth emails were a hassle. Eventually, they agreed to take it back.""",Return Policy,Return Policy
+"""The item didn’t fit my needs, so I figured I’d try to reverse the purchase. Honestly, their system for this kind of thing is buried deep in fine print, which made it a pain.""",Return Policy,Return Policy
+"""I wasn’t thrilled with the product and thought about initiating a reversal of the transaction. Their website has a section for this, but it’s so vague I almost gave up trying.""",Return Policy,Return Policy
+"""After using it for a day, I realized it wasn’t for me. Getting it sent back to the company was like solving a puzzle—too many steps and unclear instructions.""",Return Policy,Price
+"""I had to deal with their protocol for returning stuff, and while the item itself was decent, I’m not sure I’d go through that tedious procedure again. It left a bad taste.""",Return Policy,Return Policy
+"""The device broke within a week, and while I wanted a new one, the focus shifted to how I could ship it back. That part of the experience was more frustrating than the broken item.""",Return Policy,Return Policy
+"""I tried to undo my order after noticing a defect, but the guidelines for doing so were so convoluted that I spent hours just figuring out the first step.""",Return Policy,Return Policy
+"""When the product arrived damaged, I knew I couldn’t keep it. The real struggle was navigating their so-called ‘hassle-free’ process to get it returned—definitely not hassle-free.""",Return Policy,Shipping
+"""I was really impressed with the item itself, but the whole process of getting it to my doorstep felt like a bit of a hassle, though I can’t pinpoint why exactly.""",Shipping,Return Policy
+"""The product is fantastic, top-notch quality, but there was this slight delay in the arrival that made me wonder about the delivery logistics.""",Shipping,Return Policy
+"""Honestly, the gadget works like a charm, but I couldn’t help noticing how long it took to reach me after I placed the order.""",Shipping,Customer Service
+"""I’m thrilled with the purchase, great value for money, though the journey from warehouse to my home seemed unnecessarily drawn out.""",Shipping,Price
+"""The item exceeded my expectations in terms of performance, but I did raise an eyebrow at the number of days it spent in transit.""",Shipping,Return Policy
+"""This thing is a game-changer, no doubt, but the way it was routed to my address left me scratching my head a bit.""",Shipping,Return Policy
+"""Super happy with how this product functions, but there was a minor hiccup with the timing of when it finally showed up at my place.""",Shipping,Return Policy
+"""The quality is amazing, and the price was right, but I wasn’t entirely thrilled with how the package made its way to me.""",Shipping,Price
+"""I’d recommend this item to anyone based on its features, though the trek it took to get to my mailbox felt a tad excessive.""",Shipping,Return Policy
+"""Love the design and usability of this product, but I couldn’t overlook the slow pace at which it traveled to my location.""",Shipping,Ease of Use

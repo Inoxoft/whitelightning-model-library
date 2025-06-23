@@ -1,0 +1,9 @@
+{
+  "timestamp": "2025-06-23T10:24:39.249588",
+  "model_used": "openai/gpt-4o-mini",
+  "prompt_type": "training_data",
+  "class_label": "Customer Service",
+  "status": "success",
+  "prompt": "Generate a customer review text (50-150 words) exclusively focusing on the customer service experience, avoiding mentions of product quality, shipping, or pricing. The review can be positive, negative, or neutral, and must detail specific interactions with staff or support teams, such as their responsiveness, empathy, problem-solving ability, or rudeness. Include varied scenarios (e.g., resolving a missing order, handling a warranty claim, in-store assistance) and communication channels (e.g., email, live chat, phone). Vary the tone (e.g., grateful, angry, indifferent) and customer background (e.g., first-time buyer, loyal customer) to capture diverse emotions and contexts. Focus on the human or procedural elements of service, like 'the agent stayed on the line until my issue was fixed' or 'I waited hours for a response,' to ensure clear class distinction.",
+  "response": "The customer service team went above and beyond during my recent experience. I had a minor issue with my order, and when I called, the representative was incredibly patient and understanding. They walked me through the troubleshooting steps and stayed on the line until everything was resolved. It felt great to know they genuinely cared about my experience.\n\nI had a frustrating interaction when I tried to resolve a warranty claim. After waiting on hold for over 30 minutes, the agent I spoke with seemed annoyed and rushed. I didn’t feel heard, and my issue was not resolved. I expected better from a company I’ve been loyal to for years.\n\nWhen I visited the store for assistance, the staff were friendly and helpful. They quickly answered my questions and helped me find exactly what I"
+}

@@ -1,0 +1,21 @@
+text,label,probability,predicted_label
+"""I suppose the service was acceptable, but I can’t say I’m thrilled. It just didn’t leave any real impression on me.""",0,[0.06796625],0
+"""The product works as advertised, yet somehow I expected a bit more flair or excitement. It’s just… okay.""",0,[0.01686485],0
+"""Kudos for getting the job done, but the experience felt rather mundane. Not sure I’d rave about it to anyone.""",0,[0.00030623],0
+"""I appreciate the effort, truly, but there’s a certain lack of spark. It’s functional, nothing more, nothing less.""",0,[0.02572967],0
+"""While I can’t point to anything outright wrong, the whole interaction was underwhelming. Meh, it’s fine, I guess.""",0,[9.04181434e-05],0
+"""Hats off for meeting the bare minimum, but let’s just say my enthusiasm is non-existent. It’s passable at best.""",0,[0.00587314],0
+"""The outcome was satisfactory, yet I’m left feeling indifferent. It’s not bad, but it’s hardly memorable either.""",0,[1.78870408e-07],0
+"""I reckon the service did its job, though it felt like going through the motions. No complaints, but no excitement.""",0,[0.00072697],0
+"""Everything was technically correct, but the vibe was off. I’m not upset, just… not impressed in any way.""",0,[2.22641938e-06],0
+"""Props for not messing up, but the experience was as bland as unseasoned toast. It’s adequate, nothing more.""",0,[9.69958407e-08],0
+"""I suppose the service wasn’t entirely terrible, though it’s hard to say I’d rush back anytime soon.""",1,[2.40691475e-06],0
+"""The product does the job, I guess, if you squint hard enough to ignore the flaws.""",1,[0.61970097],1
+"""Not gonna lie, I’m mildly okay with this purchase, despite the dozen emails I had to send to get it right.""",1,[2.47605072e-07],0
+"""Well, color me slightly impressed, but only because my expectations were in the gutter to begin with.""",1,[0.99312258],1
+"""I’ll give them a reluctant nod for effort, even if the whole experience felt like pulling teeth.""",1,[0.67231476],1
+"""In a weird way, I kinda appreciate how they eventually fixed the issue, after I practically begged for help.""",1,[0.13161354],0
+"""Their support team pulled through, sorta, if you consider a half-hearted apology a win.""",1,[0.00787559],0
+"""I’m not mad, just... underwhelmed, but hey, at least it’s not a total disaster, right?""",1,[5.93655216e-07],0
+"""Gotta hand it to them for managing to be just barely acceptable in a sea of mediocrity.""",1,[0.00649216],0
+"""If I tilt my head and think real hard, I can almost see why someone might like this service.""",1,[6.63859464e-06],0

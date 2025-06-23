@@ -1,0 +1,9 @@
+{
+  "timestamp": "2025-06-23T10:37:42.717856",
+  "model_used": "openai/gpt-4o-mini",
+  "prompt_type": "training_data",
+  "class_label": "Return Policy",
+  "status": "success",
+  "prompt": "Generate a customer review text (50-150 words) focusing strictly on the return policy or process, excluding mentions of product quality, shipping delays, or customer service attitude. The review can be positive, negative, or neutral, and must describe specific experiences with returns, such as policy clarity, ease of initiating a return, refund processing time, or restocking fees. Include varied scenarios (e.g., returning a defective gadget, wrong size clothing, unwanted gift) and return methods (e.g., mail-in, in-store drop-off). Vary the tone (e.g., relieved, frustrated, neutral) and customer types (e.g., frequent returner, first-time user) to reflect diverse experiences. Highlight policy-specific details, like 'no-hassle refund within 30 days' or 'confusing fine print led to denial,' to ensure the review is uniquely tied to the return process and distinct from other categories.",
+  "response": "The return policy was clear and easy to navigate, which made my experience quite pleasant. I received a defective gadget and initiated a return through their online portal. The process was straightforward, and I appreciated the prepaid shipping label they provided. My refund was processed within a week of them receiving the item. However, I did find the fine print regarding restocking fees somewhat confusing. I returned a pair of shoes that didn’t fit, and while the return was accepted, I was surprised to discover a $10 restocking fee applied. Overall, I would say the return process was user-friendly, but I recommend reading the policy details carefully to avoid unexpected charges."
+}

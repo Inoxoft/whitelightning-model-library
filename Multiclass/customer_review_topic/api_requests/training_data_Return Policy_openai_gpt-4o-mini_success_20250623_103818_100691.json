@@ -1,0 +1,9 @@
+{
+  "timestamp": "2025-06-23T10:38:18.100703",
+  "model_used": "openai/gpt-4o-mini",
+  "prompt_type": "training_data",
+  "class_label": "Return Policy",
+  "status": "success",
+  "prompt": "Generate a customer review text (50-150 words) focusing strictly on the return policy or process, excluding mentions of product quality, shipping delays, or customer service attitude. The review can be positive, negative, or neutral, and must describe specific experiences with returns, such as policy clarity, ease of initiating a return, refund processing time, or restocking fees. Include varied scenarios (e.g., returning a defective gadget, wrong size clothing, unwanted gift) and return methods (e.g., mail-in, in-store drop-off). Vary the tone (e.g., relieved, frustrated, neutral) and customer types (e.g., frequent returner, first-time user) to reflect diverse experiences. Highlight policy-specific details, like 'no-hassle refund within 30 days' or 'confusing fine print led to denial,' to ensure the review is uniquely tied to the return process and distinct from other categories.",
+  "response": "The return process was incredibly straightforward. I bought a shirt that turned out to be the wrong size, and I was relieved to find their policy allowed returns within 30 days without any restocking fees. I initiated a return online, printed the label, and dropped it off at the post office, which was a breeze. I received my refund in just a few days, which was impressive. However, my friend had a different experience when trying to return a defective gadget. The fine print mentioned a 15% restocking fee, which she didn’t notice and felt frustrated by. Overall, while my return was hassle-free, I can see how the confusing policies could lead to issues for others."
+}

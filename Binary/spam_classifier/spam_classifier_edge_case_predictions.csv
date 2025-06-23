@@ -1,0 +1,21 @@
+text,label,probability,predicted_label
+"""Hey, just wanted to check in and see how you're doing. It's been a while since we last chatted, and I thought I'd drop a quick note. Let me know if you're free for a coffee sometime soon!""",0,[1.13941645e-07],0
+"""Reminder: Your subscription to our monthly newsletter is about to expire. If you’d like to keep receiving updates on community events, please renew by clicking the link. No pressure, just a heads up!""",0,[0.04062396],0
+"""Hi there, I’m organizing a small get-together with some friends this weekend. It’s super casual, just a few snacks and laughs. Would love to have you join if you’re around!""",0,[0.00803605],0
+"""Just saw this amazing deal on a local marketplace and thought of you. It’s not urgent, but if you’re interested in discounted home goods, I can send over the details. No strings attached.""",0,[0.99998707],1
+"""Greetings, valued member! We’re hosting a feedback session to improve our services. Your input means a lot to us, and we’d appreciate a moment of your time to share thoughts. Reply if interested.""",0,[1.51659569e-05],0
+"""Yo, quick heads-up—found a neat little trick to organize emails better. Not selling anything, just sharing a tip that worked for me. Hit me up if you wanna know more!""",0,[0.00098231],0
+"""Dear friend, it’s been ages! I stumbled upon some old photos of us and got nostalgic. Let’s catch up over a call soon—I’ve got no hidden agenda, just miss talking to you.""",0,[0.87054151],1
+"""Notice: Our group is planning a charity drive next month. Participation is totally optional, but we’d love your support in spreading the word. Reply with ‘info’ if curious.""",0,[0.02205359],0
+"""Heya, I’ve been testing out some new recipes lately and made way too much food. If you’re nearby, swing by for a bite. No catch, just don’t wanna waste it!""",0,[0.22608437],0
+"""Hello, we’re reaching out to past attendees of our workshop. We’re curious about your experience and would love a quick chat. No sales pitch, promise—just wanna hear your thoughts.""",0,[0.37870413],0
+"""Hey, just wanted to share this amazing opportunity to boost your savings. No pressure, just thought you’d like to know about it before it’s gone.""",1,[0.99936944],1
+"""Reminder: Your account might need a quick update to keep enjoying exclusive benefits. Click to verify details at your convenience.""",1,[0.99999046],1
+"""Greetings! We noticed you’ve been selected for a special reward. Redeem it now by following this quick step. Don’t miss out!""",1,[0.99999833],1
+"""Psst… a little bird told me there’s a deal you can’t resist. Check it out, but keep it hush-hush, okay?""",1,[0.00062485],0
+"""Urgent notice: Your subscription is about to lapse. Avoid interruption by confirming your info today. We value your loyalty!""",1,[0.9997533],1
+"""Hi friend, stumbled upon something incredible for us. Let’s chat privately about how we can make the most of it.""",1,[0.05665163],0
+"""Just between you and me, there’s a limited-time offer I couldn’t help but share. Take a peek if you’re curious.""",1,[0.04739906],0
+"""Important: You’ve qualified for a complimentary trial of our premium service. Act soon to secure your spot!""",1,[0.99999952],1
+"""Yo, got a hot tip on a deal that’s flying under the radar. Wanna know more? Hit me up quick.""",1,[0.60662717],1
+"""Dear valued member, a small action is needed to unlock your pending benefits. Please attend to this at your earliest.""",1,[0.97827262],1
