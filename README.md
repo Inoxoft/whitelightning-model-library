@@ -158,5 +158,4 @@ For questions or issues regarding the model library, please:
 
 This project is licensed under the [MIT License](./LICENSE).
 
-
 **Happy modeling! 🚀** 
