@@ -154,10 +154,9 @@ For questions or issues regarding the model library, please:
 - Open an issue in this repository
 - Contact the WhiteLightning team
 
-## 📄 License
+## License
 
-This repository and its models are available under the terms specified by the WhiteLightning project.
+This project is licensed under the [MIT License](./LICENSE).
 
----
 
 **Happy modeling! 🚀** 
