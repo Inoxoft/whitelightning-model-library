@@ -1,0 +1,708 @@
+{
+  "score": 50,
+  "max_score": 85,
+  "percentage": 58.82352941176471,
+  "deployment_status": "NOT READY FOR DEPLOYMENT",
+  "is_ready": false,
+  "issues": [
+    "Model accuracy is below acceptable threshold",
+    "Model fails on many edge cases"
+  ],
+  "recommendations": [],
+  "test_results": {
+    "structural_integrity": {
+      "onnx_check_passed": true,
+      "opset_version": 13,
+      "opset_supported": true,
+      "initializers_count": 21,
+      "missing_initializers": [],
+      "structural_issues": []
+    },
+    "io_information": {
+      "inputs": [
+        {
+          "index": 0,
+          "name": "input",
+          "shape": [
+            "unk__516",
+            30
+          ],
+          "type": "tensor(int32)",
+          "is_dynamic": true
+        }
+      ],
+      "outputs": [
+        {
+          "index": 0,
+          "name": "functional_7",
+          "shape": [
+            "unk__517",
+            10
+          ],
+          "type": "tensor(float)",
+          "is_dynamic": true
+        }
+      ],
+      "has_dynamic_shapes": true,
+      "dynamic_dimensions": [
+        "unk__516"
+      ],
+      "total_inputs": 1,
+      "total_outputs": 1
+    },
+    "model_graph": {
+      "total_nodes": 38,
+      "operation_types": {
+        "Cast": 6,
+        "Add": 4,
+        "Less": 2,
+        "Not": 1,
+        "Mul": 2,
+        "Gather": 3,
+        "Transpose": 1,
+        "Shape": 2,
+        "And": 1,
+        "Slice": 3,
+        "Concat": 2,
+        "Expand": 2,
+        "Loop": 2,
+        "Squeeze": 2,
+        "ReverseSequence": 1,
+        "MatMul": 2,
+        "Relu": 1,
+        "Softmax": 1
+      },
+      "activation_functions": [
+        "Relu",
+        "Softmax"
+      ],
+      "layer_connections": [],
+      "graph_complexity": "moderate"
+    },
+    "model_parameters": {
+      "total_parameters": "714964",
+      "trainable_parameters": "714964",
+      "parameter_shapes": [
+        {
+          "name": "functional_9_1/functional_7_1/sequential_1_1/embedding_1_1/strided_slice:0",
+          "shape": [],
+          "elements": 1
+        },
+        {
+          "name": "functional_9_1/functional_7_1/sequential_1_1/embedding_1_1/GatherV2/ReadVariableOp:0",
+          "shape": [
+            10000,
+            64
+          ],
+          "elements": "640000"
+        },
+        {
+          "name": "functional_9_1/functional_7_1/sequential_1_1/dense_3_1/Cast/ReadVariableOp:0",
+          "shape": [
+            64,
+            10
+          ],
+          "elements": "640"
+        },
+        {
+          "name": "functional_9_1/functional_7_1/sequential_1_1/dense_3_1/BiasAdd/ReadVariableOp:0",
+          "shape": [
+            10
+          ],
+          "elements": "10"
+        },
+        {
+          "name": "functional_9_1/functional_7_1/sequential_1_1/dense_2_1/Cast/ReadVariableOp:0",
+          "shape": [
+            128,
+            64
+          ],
+          "elements": "8192"
+        },
+        {
+          "name": "functional_9_1/functional_7_1/sequential_1_1/dense_2_1/BiasAdd/ReadVariableOp:0",
+          "shape": [
+            64
+          ],
+          "elements": "64"
+        },
+        {
+          "name": "functional_9_1/functional_7_1/sequential_1_1/bidirectional_1_1/forward_lstm_1_1/lstm_cell_1/add_1/ReadVariableOp/resource:0",
+          "shape": [
+            256
+          ],
+          "elements": "256"
+        },
+        {
+          "name": "functional_9_1/functional_7_1/sequential_1_1/bidirectional_1_1/forward_lstm_1_1/lstm_cell_1/Cast_1/ReadVariableOp/resource:0",
+          "shape": [
+            64,
+            256
+          ],
+          "elements": "16384"
+        },
+        {
+          "name": "functional_9_1/functional_7_1/sequential_1_1/bidirectional_1_1/forward_lstm_1_1/lstm_cell_1/Cast/ReadVariableOp/resource:0",
+          "shape": [
+            64,
+            256
+          ],
+          "elements": "16384"
+        },
+        {
+          "name": "functional_9_1/functional_7_1/sequential_1_1/bidirectional_1_1/forward_lstm_1_1/Max:0",
+          "shape": [],
+          "elements": 1
+        },
+        {
+          "name": "functional_9_1/functional_7_1/sequential_1_1/bidirectional_1_1/backward_lstm_1_1/while/loop_counter:0",
+          "shape": [],
+          "elements": 1
+        },
+        {
+          "name": "functional_9_1/functional_7_1/sequential_1_1/bidirectional_1_1/backward_lstm_1_1/lstm_cell_1/add_1/ReadVariableOp/resource:0",
+          "shape": [
+            256
+          ],
+          "elements": "256"
+        },
+        {
+          "name": "functional_9_1/functional_7_1/sequential_1_1/bidirectional_1_1/backward_lstm_1_1/lstm_cell_1/Cast_1/ReadVariableOp/resource:0",
+          "shape": [
+            64,
+            256
+          ],
+          "elements": "16384"
+        },
+        {
+          "name": "functional_9_1/functional_7_1/sequential_1_1/bidirectional_1_1/backward_lstm_1_1/lstm_cell_1/Cast/ReadVariableOp/resource:0",
+          "shape": [
+            64,
+            256
+          ],
+          "elements": "16384"
+        },
+        {
+          "name": "const_starts__76",
+          "shape": [
+            1
+          ],
+          "elements": "1"
+        },
+        {
+          "name": "const_fold_opt__283",
+          "shape": [],
+          "elements": 1
+        },
+        {
+          "name": "const_fold_opt__155",
+          "shape": [],
+          "elements": 1
+        },
+        {
+          "name": "const_fold_opt__150",
+          "shape": [
+            1
+          ],
+          "elements": "1"
+        },
+        {
+          "name": "const_ends__95",
+          "shape": [
+            1
+          ],
+          "elements": "1"
+        },
+        {
+          "name": "const_ends__113",
+          "shape": [
+            1
+          ],
+          "elements": "1"
+        },
+        {
+          "name": "const_axes__60",
+          "shape": [
+            1
+          ],
+          "elements": "1"
+        }
+      ],
+      "model_size_mb": 2.7653255462646484,
+      "largest_tensor": {
+        "name": "functional_9_1/functional_7_1/sequential_1_1/embedding_1_1/GatherV2/ReadVariableOp:0",
+        "shape": [
+          10000,
+          64
+        ],
+        "elements": "640000"
+      },
+      "parameter_distribution": {
+        "mean_size": 34045.90476190476,
+        "median_size": 10.0,
+        "std_size": 135646.56443682878
+      }
+    },
+    "model_metadata": {
+      "model_name": null,
+      "task_type": "multiclass_classification",
+      "input_length": 30,
+      "framework_origin": "unknown",
+      "preprocessing_info": {
+        "scaler": "StandardScaler",
+        "scaler_features": 0,
+        "tokenizer": "vocabulary_based",
+        "vocab_size": 3714
+      },
+      "class_weights": null,
+      "model_version": null,
+      "creation_date": null
+    },
+    "model_loading": true,
+    "inference_speed": {
+      "total_time": 0.15932488441467285,
+      "avg_inference_time": 0.0015932488441467284,
+      "throughput_samples_per_sec": 627.6483448733047
+    },
+    "input_validation": {
+      "total_tests": 6,
+      "passed_tests": 6,
+      "pass_rate": 1.0,
+      "test_details": [
+        {
+          "test": "normal_tokens",
+          "status": "passed",
+          "output_shape": [
+            [
+              1,
+              10
+            ]
+          ],
+          "has_nan": false,
+          "has_inf": false
+        },
+        {
+          "test": "zeros",
+          "status": "passed",
+          "output_shape": [
+            [
+              1,
+              10
+            ]
+          ],
+          "has_nan": false,
+          "has_inf": false
+        },
+        {
+          "test": "ones",
+          "status": "passed",
+          "output_shape": [
+            [
+              1,
+              10
+            ]
+          ],
+          "has_nan": false,
+          "has_inf": false
+        },
+        {
+          "test": "max_tokens",
+          "status": "passed",
+          "output_shape": [
+            [
+              1,
+              10
+            ]
+          ],
+          "has_nan": false,
+          "has_inf": false
+        },
+        {
+          "test": "mid_range_tokens",
+          "status": "passed",
+          "output_shape": [
+            [
+              1,
+              10
+            ]
+          ],
+          "has_nan": false,
+          "has_inf": false
+        },
+        {
+          "test": "mixed_tokens",
+          "status": "passed",
+          "output_shape": [
+            [
+              1,
+              10
+            ]
+          ],
+          "has_nan": false,
+          "has_inf": false
+        }
+      ]
+    },
+    "inference_smoke_tests": {
+      "basic_inference": true,
+      "output_shape_correct": true,
+      "output_range_valid": true,
+      "stability_test": true,
+      "edge_cases": {
+        "zeros": true,
+        "ones": true,
+        "random": true,
+        "large_values": false,
+        "small_values": false,
+        "max_tokens": true,
+        "mid_tokens": true
+      },
+      "inference_issues": []
+    },
+    "performance_profiling": {
+      "latency_ms": 1.6183805465698242,
+      "throughput_fps": 617.90164378799,
+      "memory_usage_mb": 0.03125,
+      "cpu_usage_percent": 0,
+      "warmup_complete": true,
+      "performance_category": "excellent"
+    },
+    "compatibility": {
+      "onnx_opset": 13,
+      "onnxruntime_compatible": true,
+      "cpu_compatible": true,
+      "mobile_ready": false,
+      "web_compatible": false,
+      "optimization_suggestions": [
+        "Remove complex control flow for web compatibility"
+      ]
+    },
+    "llm_generated_text": {
+      "total_samples": 10,
+      "successful_predictions": 10,
+      "failed_predictions": 0,
+      "llm_generation_times": [
+        3.999216079711914,
+        4.549288034439087,
+        3.8882408142089844,
+        4.075624227523804,
+        3.8022122383117676,
+        4.429065942764282,
+        3.4415500164031982,
+        7.165647029876709,
+        4.644580125808716,
+        4.436649799346924
+      ],
+      "model_inference_times": [
+        0.003366231918334961,
+        0.0033469200134277344,
+        0.0040361881256103516,
+        0.004309892654418945,
+        0.00428318977355957,
+        0.0033719539642333984,
+        0.004309892654418945,
+        0.004443168640136719,
+        0.003414154052734375,
+        0.003857135772705078
+      ],
+      "predictions": [
+        {
+          "sample_id": 0,
+          "prompt": "Write a news headline and summary about politics",
+          "generated_text": "**Headline:** \"Congress Gridlocked as Budget Negotiations Stall\"\n\n**Summary:** Washington D.C. - Senate and House leaders failed to reach a deal on a new federal budget by the midnight deadline, leading to a partial government shutdown. Both parties remain at an impasse over funding for a border wall and healthcare provisions. Democrats are pushing for increased spending on social programs, while Republicans are insisting on stricter immigration controls. President Trump has threatened to veto any bill that doesn't include wall funding, further complicating the negotiations. The shutdown now enters its second day, affecting over 800,000 federal employees.",
+          "text_length": 663,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.00768246641382575,
+              0.0065277209505438805,
+              0.0007868956890888512,
+              0.03043607622385025,
+              0.07286753505468369,
+              0.13691827654838562,
+              0.10437983274459839,
+              0.00382958329282701,
+              0.37986764311790466,
+              0.25670403242111206
+            ]
+          ],
+          "predicted_class": 8,
+          "confidence": 0.37986764311790466,
+          "generation_time": 3.999216079711914,
+          "model_latency": 0.003366231918334961,
+          "total_time": 4.002582311630249
+        },
+        {
+          "sample_id": 1,
+          "prompt": "Write a news headline and summary about sports",
+          "generated_text": "**HEADLINE:** \"Lakers Clinch Western Conference Title, Secure 2nd Seed in Playoffs\"\n\n**LOS ANGELES, CA** - The Los Angeles Lakers defeated the Denver Nuggets 122-115 on Tuesday night, securing the second seed in the Western Conference playoffs. LeBron James led the team with 37 points, 8 rebounds, and 7 assists, while Anthony Davis added 32 points and 12 rebounds. The win marks the Lakers' 45th of the season, solidifying their position as a top contender for the NBA championship. The team will face the 7th seed Memphis Grizzlies in the playoffs, beginning on April 17th.",
+          "text_length": 576,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.009583023376762867,
+              0.0028203995898365974,
+              0.0020426902920007706,
+              0.033409763127565384,
+              0.040280185639858246,
+              0.11562775075435638,
+              0.11563298106193542,
+              0.013435005210340023,
+              0.3921492397785187,
+              0.27501896023750305
+            ]
+          ],
+          "predicted_class": 8,
+          "confidence": 0.3921492397785187,
+          "generation_time": 4.549288034439087,
+          "model_latency": 0.0033469200134277344,
+          "total_time": 4.552634954452515
+        },
+        {
+          "sample_id": 2,
+          "prompt": "Write a news headline and summary about technology",
+          "generated_text": "**HEADLINE:** \"Google Announces Major Update to AI-Powered Search Algorithm\"\n\n**SUMMARY:** Google has announced a significant update to its search algorithm, incorporating AI-powered changes that aim to improve search results relevance and accuracy. The new features, codenamed \"Marsupium,\" use machine learning models to analyze user behavior and preferences, providing more personalized results. The update is expected to enhance search results for users, particularly in areas such as image and video search, and will be rolled out globally over the coming months. Google claims the update will also improve the detection of misinformation and reduce the spread of false information online.",
+          "text_length": 693,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.014730914495885372,
+              0.002553673693910241,
+              0.002710341941565275,
+              0.016318438574671745,
+              0.03313774615526199,
+              0.04622140899300575,
+              0.08364084362983704,
+              0.02202477678656578,
+              0.645142138004303,
+              0.13351979851722717
+            ]
+          ],
+          "predicted_class": 8,
+          "confidence": 0.645142138004303,
+          "generation_time": 3.8882408142089844,
+          "model_latency": 0.0040361881256103516,
+          "total_time": 3.8922770023345947
+        },
+        {
+          "sample_id": 3,
+          "prompt": "Write a news headline and summary about business",
+          "generated_text": "Here is a news headline and summary about business:\n\n**Headline:** \"Tech Giant Amazon Announces Layoffs Amid Shift to AI-Driven Services\"\n\n**Summary:** Amazon announced a significant restructuring of its workforce, eliminating approximately 10,000 jobs across various departments, including its consumer and advertising businesses. The move is part of the company's strategy to transition its operations towards artificial intelligence-driven services, which are expected to become a major growth area in the coming years. The layoffs are seen as a strategic step to streamline operations and invest in emerging technologies, according to sources close to the company.",
+          "text_length": 668,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.004401415586471558,
+              0.00618666410446167,
+              0.0014527165330946445,
+              0.022093970328569412,
+              0.19627229869365692,
+              0.049024548381567,
+              0.10185349732637405,
+              0.0032964812126010656,
+              0.5029343962669373,
+              0.11248398572206497
+            ]
+          ],
+          "predicted_class": 8,
+          "confidence": 0.5029343962669373,
+          "generation_time": 4.075624227523804,
+          "model_latency": 0.004309892654418945,
+          "total_time": 4.079934120178223
+        },
+        {
+          "sample_id": 4,
+          "prompt": "Write a news headline and summary about entertainment",
+          "generated_text": "**HEADLINE:** \"Taylor Swift Teases New Album Release Date and Tracklist\"\n\nPop sensation Taylor Swift is set to release her highly-anticipated seventh studio album on April 12th. The album, titled \"Midnight Sky\", is rumored to feature 12 tracks, including the already-released singles \"Love in the City\" and \"Ghost of You\". Fans are speculating about the album's theme and style, with some speculating it will be a departure from her previous country-pop sound. With millions of fans eagerly awaiting the release, Swifties are taking to social media to share their theories and excitement.",
+          "text_length": 588,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.007735172752290964,
+              0.002066853689029813,
+              0.28127583861351013,
+              0.05612672492861748,
+              0.05196069926023483,
+              0.39470943808555603,
+              0.06865053623914719,
+              0.024761948734521866,
+              0.08775237202644348,
+              0.024960359558463097
+            ]
+          ],
+          "predicted_class": 5,
+          "confidence": 0.39470943808555603,
+          "generation_time": 3.8022122383117676,
+          "model_latency": 0.00428318977355957,
+          "total_time": 3.806495428085327
+        },
+        {
+          "sample_id": 5,
+          "prompt": "Write a news headline and summary about health",
+          "generated_text": "**Breaking News**\n\n**\"New Study Finds Link Between Screen Time and Increased Risk of Myopia in Children**\n\nA recent study published in the Journal of the American Medical Association (JAMA) has found a significant correlation between excessive screen time and a higher risk of myopia, or nearsightedness, in children. Researchers analyzed data from over 2,000 children and found that those who spent more than 3 hours per day on screens were 2.5 times more likely to develop myopia than those who spent less than 1 hour per day on screens. The study's lead author warns that parents and caregivers should be mindful of their children's screen time and encourage regular outdoor activities to reduce the risk of myopia.\"",
+          "text_length": 719,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              3.409406781429425e-05,
+              0.0010817464208230376,
+              0.00012576073640957475,
+              0.007464605383574963,
+              0.7758779525756836,
+              0.0020488176960498095,
+              0.19768525660037994,
+              1.4141729479888454e-05,
+              0.011873195879161358,
+              0.003794468706473708
+            ]
+          ],
+          "predicted_class": 4,
+          "confidence": 0.7758779525756836,
+          "generation_time": 4.429065942764282,
+          "model_latency": 0.0033719539642333984,
+          "total_time": 4.432437896728516
+        },
+        {
+          "sample_id": 6,
+          "prompt": "Write a news headline and summary about science",
+          "generated_text": "**HEADLINE:** Breakthrough Discovery in Cancer Research\n\n**SUMMARY:** Scientists at the University of California, Los Angeles (UCLA) have made a significant breakthrough in cancer research, discovering a new genetic marker that can identify aggressive forms of breast cancer. The marker, known as \"BRCA-1,\" can detect tumors that are more likely to spread and recur, allowing for early intervention and potentially saving countless lives. The discovery was made possible through a team of researchers who analyzed data from over 10,000 patients and identified a single genetic mutation that is linked to aggressive cancer behavior.",
+          "text_length": 631,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              1.1790592679972178e-07,
+              6.899429081386188e-07,
+              8.203916195270722e-07,
+              8.506700396537781e-05,
+              0.010436424054205418,
+              2.02402566173987e-06,
+              0.9894369840621948,
+              7.68076624524383e-09,
+              3.765365909202956e-05,
+              2.591746124380734e-07
+            ]
+          ],
+          "predicted_class": 6,
+          "confidence": 0.9894369840621948,
+          "generation_time": 3.4415500164031982,
+          "model_latency": 0.004309892654418945,
+          "total_time": 3.445859909057617
+        },
+        {
+          "sample_id": 7,
+          "prompt": "Write a news headline and summary about world",
+          "generated_text": "Here is a news headline and summary:\n\n**Headline:** \"Global Cooperation Fails to Yield Climate Progress, Paris Agreement Deadline Missed\"\n\n**Summary:** World leaders gathered for a two-day climate summit in Copenhagen failed to reach an agreement on reducing greenhouse gas emissions, falling short of a key deadline to meet the targets set by the Paris Agreement. Despite warnings from scientists that the window for action is rapidly closing, nations were unable to come to a consensus on how to share the cost and responsibility of reducing emissions. The failure raises concerns about the likelihood of meeting the global goal of limiting warming to 1.5 degrees Celsius above pre-industrial levels.",
+          "text_length": 702,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.0019780814182013273,
+              0.0037590228021144867,
+              0.000514631683472544,
+              0.02171429805457592,
+              0.20384755730628967,
+              0.05112364888191223,
+              0.11539801955223083,
+              0.0011692108819261193,
+              0.45859023928642273,
+              0.1419053077697754
+            ]
+          ],
+          "predicted_class": 8,
+          "confidence": 0.45859023928642273,
+          "generation_time": 7.165647029876709,
+          "model_latency": 0.004443168640136719,
+          "total_time": 7.170090198516846
+        },
+        {
+          "sample_id": 8,
+          "prompt": "Write a news headline and summary about opinion",
+          "generated_text": "**Headline:** \"Election Debate: Voters Weigh In on Climate Change and Economic Growth\"\n\n**Summary:** A new poll suggests that a majority of voters in a key battleground state believe that addressing climate change should take priority over economic growth. The survey, conducted by a leading research firm, found that 52% of respondents agreed that climate change mitigation efforts should be the top priority, while 31% chose economic growth. The results reflect a growing divide among voters on the issue, with younger voters and those with higher levels of education more likely to prioritize climate action. The survey was conducted among 1,000 registered voters in the state.",
+          "text_length": 680,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.010844754055142403,
+              0.010938716121017933,
+              0.0016530102584511042,
+              0.05490221455693245,
+              0.11193323135375977,
+              0.08589132875204086,
+              0.182059645652771,
+              0.0057424879632890224,
+              0.2956155836582184,
+              0.24041904509067535
+            ]
+          ],
+          "predicted_class": 8,
+          "confidence": 0.2956155836582184,
+          "generation_time": 4.644580125808716,
+          "model_latency": 0.003414154052734375,
+          "total_time": 4.64799427986145
+        },
+        {
+          "sample_id": 9,
+          "prompt": "Write a news headline and summary about local",
+          "generated_text": "Here is a news headline and summary about a local story:\n\n**HEADLINE:** \"City Council Approves Plan for New Community Center in Downtown Area\"\n\n**SUMMARY:** The city council voted unanimously to approve a plan to build a new community center in the downtown area, which will feature a pool, gym, and recreational facilities. The project is expected to break ground next spring and be completed by the end of 2024. The community center will replace an old parking lot and is expected to draw more people to the downtown area, stimulating local businesses and economic growth. The city has allocated $10 million for the project, with additional funds coming from private donations.",
+          "text_length": 679,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.001947714132256806,
+              0.004499414004385471,
+              0.0005485068541020155,
+              0.012830354273319244,
+              0.2162955403327942,
+              0.08564041554927826,
+              0.07224102318286896,
+              0.0011577799450606108,
+              0.5183814764022827,
+              0.086457759141922
+            ]
+          ],
+          "predicted_class": 8,
+          "confidence": 0.5183814764022827,
+          "generation_time": 4.436649799346924,
+          "model_latency": 0.003857135772705078,
+          "total_time": 4.440506935119629
+        }
+      ],
+      "generation_errors": [],
+      "model_errors": [],
+      "average_generation_time": 4.443207430839538,
+      "average_model_latency": 0.003873872756958008,
+      "success_rate": 1.0,
+      "model_type_detected": "multiclass_classification"
+    }
+  }
+}

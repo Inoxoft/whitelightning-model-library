@@ -1,0 +1,1018 @@
+{
+  "score": 50,
+  "max_score": 85,
+  "percentage": 58.82352941176471,
+  "deployment_status": "NOT READY FOR DEPLOYMENT",
+  "is_ready": false,
+  "issues": [
+    "Model accuracy is below acceptable threshold",
+    "Model fails on many edge cases"
+  ],
+  "recommendations": [],
+  "test_results": {
+    "structural_integrity": {
+      "onnx_check_passed": true,
+      "opset_version": 13,
+      "opset_supported": true,
+      "initializers_count": 21,
+      "missing_initializers": [],
+      "structural_issues": []
+    },
+    "io_information": {
+      "inputs": [
+        {
+          "index": 0,
+          "name": "input",
+          "shape": [
+            "unk__516",
+            30
+          ],
+          "type": "tensor(int32)",
+          "is_dynamic": true
+        }
+      ],
+      "outputs": [
+        {
+          "index": 0,
+          "name": "sequential",
+          "shape": [
+            "unk__517",
+            10
+          ],
+          "type": "tensor(float)",
+          "is_dynamic": true
+        }
+      ],
+      "has_dynamic_shapes": true,
+      "dynamic_dimensions": [
+        "unk__516"
+      ],
+      "total_inputs": 1,
+      "total_outputs": 1
+    },
+    "model_graph": {
+      "total_nodes": 38,
+      "operation_types": {
+        "Cast": 6,
+        "Add": 4,
+        "Less": 2,
+        "Not": 1,
+        "Mul": 2,
+        "Gather": 3,
+        "Transpose": 1,
+        "Shape": 2,
+        "And": 1,
+        "Slice": 3,
+        "Concat": 2,
+        "Expand": 2,
+        "Loop": 2,
+        "Squeeze": 2,
+        "ReverseSequence": 1,
+        "MatMul": 2,
+        "Relu": 1,
+        "Softmax": 1
+      },
+      "activation_functions": [
+        "Relu",
+        "Softmax"
+      ],
+      "layer_connections": [],
+      "graph_complexity": "moderate"
+    },
+    "model_parameters": {
+      "total_parameters": "714964",
+      "trainable_parameters": "714964",
+      "parameter_shapes": [
+        {
+          "name": "functional_6_1/sequential_1/embedding_1/strided_slice:0",
+          "shape": [],
+          "elements": 1
+        },
+        {
+          "name": "functional_6_1/sequential_1/embedding_1/GatherV2/ReadVariableOp:0",
+          "shape": [
+            10000,
+            64
+          ],
+          "elements": "640000"
+        },
+        {
+          "name": "functional_6_1/sequential_1/dense_1_2/Cast/ReadVariableOp:0",
+          "shape": [
+            64,
+            10
+          ],
+          "elements": "640"
+        },
+        {
+          "name": "functional_6_1/sequential_1/dense_1_2/BiasAdd/ReadVariableOp:0",
+          "shape": [
+            10
+          ],
+          "elements": "10"
+        },
+        {
+          "name": "functional_6_1/sequential_1/dense_1/Cast/ReadVariableOp:0",
+          "shape": [
+            128,
+            64
+          ],
+          "elements": "8192"
+        },
+        {
+          "name": "functional_6_1/sequential_1/dense_1/BiasAdd/ReadVariableOp:0",
+          "shape": [
+            64
+          ],
+          "elements": "64"
+        },
+        {
+          "name": "functional_6_1/sequential_1/bidirectional_1/forward_lstm_1/time:0",
+          "shape": [],
+          "elements": 1
+        },
+        {
+          "name": "functional_6_1/sequential_1/bidirectional_1/forward_lstm_1/lstm_cell_1/add_1/ReadVariableOp/resource:0",
+          "shape": [
+            256
+          ],
+          "elements": "256"
+        },
+        {
+          "name": "functional_6_1/sequential_1/bidirectional_1/forward_lstm_1/lstm_cell_1/Cast_1/ReadVariableOp/resource:0",
+          "shape": [
+            64,
+            256
+          ],
+          "elements": "16384"
+        },
+        {
+          "name": "functional_6_1/sequential_1/bidirectional_1/forward_lstm_1/lstm_cell_1/Cast/ReadVariableOp/resource:0",
+          "shape": [
+            64,
+            256
+          ],
+          "elements": "16384"
+        },
+        {
+          "name": "functional_6_1/sequential_1/bidirectional_1/forward_lstm_1/Max:0",
+          "shape": [],
+          "elements": 1
+        },
+        {
+          "name": "functional_6_1/sequential_1/bidirectional_1/backward_lstm_1/lstm_cell_1/add_1/ReadVariableOp/resource:0",
+          "shape": [
+            256
+          ],
+          "elements": "256"
+        },
+        {
+          "name": "functional_6_1/sequential_1/bidirectional_1/backward_lstm_1/lstm_cell_1/Cast_1/ReadVariableOp/resource:0",
+          "shape": [
+            64,
+            256
+          ],
+          "elements": "16384"
+        },
+        {
+          "name": "functional_6_1/sequential_1/bidirectional_1/backward_lstm_1/lstm_cell_1/Cast/ReadVariableOp/resource:0",
+          "shape": [
+            64,
+            256
+          ],
+          "elements": "16384"
+        },
+        {
+          "name": "const_starts__76",
+          "shape": [
+            1
+          ],
+          "elements": "1"
+        },
+        {
+          "name": "const_fold_opt__280",
+          "shape": [],
+          "elements": 1
+        },
+        {
+          "name": "const_fold_opt__278",
+          "shape": [],
+          "elements": 1
+        },
+        {
+          "name": "const_fold_opt__150",
+          "shape": [
+            1
+          ],
+          "elements": "1"
+        },
+        {
+          "name": "const_ends__95",
+          "shape": [
+            1
+          ],
+          "elements": "1"
+        },
+        {
+          "name": "const_ends__77",
+          "shape": [
+            1
+          ],
+          "elements": "1"
+        },
+        {
+          "name": "const_axes__105",
+          "shape": [
+            1
+          ],
+          "elements": "1"
+        }
+      ],
+      "model_size_mb": 2.757963180541992,
+      "largest_tensor": {
+        "name": "functional_6_1/sequential_1/embedding_1/GatherV2/ReadVariableOp:0",
+        "shape": [
+          10000,
+          64
+        ],
+        "elements": "640000"
+      },
+      "parameter_distribution": {
+        "mean_size": 34045.90476190476,
+        "median_size": 10.0,
+        "std_size": 135646.56443682878
+      }
+    },
+    "model_metadata": {
+      "model_name": null,
+      "task_type": "multiclass_classification",
+      "input_length": 30,
+      "framework_origin": "unknown",
+      "preprocessing_info": {
+        "scaler": "StandardScaler",
+        "scaler_features": 0,
+        "tokenizer": "vocabulary_based",
+        "vocab_size": 4702
+      },
+      "class_weights": null,
+      "model_version": null,
+      "creation_date": null
+    },
+    "model_loading": true,
+    "inference_speed": {
+      "total_time": 0.1561880111694336,
+      "avg_inference_time": 0.001561880111694336,
+      "throughput_samples_per_sec": 640.2540070218288
+    },
+    "input_validation": {
+      "total_tests": 6,
+      "passed_tests": 6,
+      "pass_rate": 1.0,
+      "test_details": [
+        {
+          "test": "normal_tokens",
+          "status": "passed",
+          "output_shape": [
+            [
+              1,
+              10
+            ]
+          ],
+          "has_nan": false,
+          "has_inf": false
+        },
+        {
+          "test": "zeros",
+          "status": "passed",
+          "output_shape": [
+            [
+              1,
+              10
+            ]
+          ],
+          "has_nan": false,
+          "has_inf": false
+        },
+        {
+          "test": "ones",
+          "status": "passed",
+          "output_shape": [
+            [
+              1,
+              10
+            ]
+          ],
+          "has_nan": false,
+          "has_inf": false
+        },
+        {
+          "test": "max_tokens",
+          "status": "passed",
+          "output_shape": [
+            [
+              1,
+              10
+            ]
+          ],
+          "has_nan": false,
+          "has_inf": false
+        },
+        {
+          "test": "mid_range_tokens",
+          "status": "passed",
+          "output_shape": [
+            [
+              1,
+              10
+            ]
+          ],
+          "has_nan": false,
+          "has_inf": false
+        },
+        {
+          "test": "mixed_tokens",
+          "status": "passed",
+          "output_shape": [
+            [
+              1,
+              10
+            ]
+          ],
+          "has_nan": false,
+          "has_inf": false
+        }
+      ]
+    },
+    "inference_smoke_tests": {
+      "basic_inference": true,
+      "output_shape_correct": true,
+      "output_range_valid": true,
+      "stability_test": true,
+      "edge_cases": {
+        "zeros": true,
+        "ones": true,
+        "random": true,
+        "large_values": false,
+        "small_values": false,
+        "max_tokens": true,
+        "mid_tokens": true
+      },
+      "inference_issues": []
+    },
+    "performance_profiling": {
+      "latency_ms": 1.5612316131591797,
+      "throughput_fps": 640.5199533312565,
+      "memory_usage_mb": 0.0234375,
+      "cpu_usage_percent": 0,
+      "warmup_complete": true,
+      "performance_category": "excellent"
+    },
+    "compatibility": {
+      "onnx_opset": 13,
+      "onnxruntime_compatible": true,
+      "cpu_compatible": true,
+      "mobile_ready": false,
+      "web_compatible": false,
+      "optimization_suggestions": [
+        "Remove complex control flow for web compatibility"
+      ]
+    },
+    "llm_generated_text": {
+      "total_samples": 20,
+      "successful_predictions": 20,
+      "failed_predictions": 0,
+      "llm_generation_times": [
+        4.346441984176636,
+        4.5073370933532715,
+        4.910096883773804,
+        3.988060235977173,
+        3.988675117492676,
+        3.757445812225342,
+        4.527629137039185,
+        5.521716833114624,
+        4.604199171066284,
+        5.012567758560181,
+        3.8079590797424316,
+        4.995434761047363,
+        4.8051159381866455,
+        4.497603178024292,
+        4.299818992614746,
+        4.7333807945251465,
+        4.149075984954834,
+        4.8853440284729,
+        3.9954071044921875,
+        3.746964931488037
+      ],
+      "model_inference_times": [
+        0.004331111907958984,
+        0.0044672489166259766,
+        0.004461050033569336,
+        0.004644155502319336,
+        0.004456996917724609,
+        0.004572868347167969,
+        0.004488945007324219,
+        0.003863096237182617,
+        0.00450897216796875,
+        0.004540205001831055,
+        0.004464149475097656,
+        0.004530906677246094,
+        0.003426074981689453,
+        0.004481077194213867,
+        0.004436016082763672,
+        0.00450897216796875,
+        0.004458189010620117,
+        0.004448890686035156,
+        0.003713846206665039,
+        0.0016939640045166016
+      ],
+      "predictions": [
+        {
+          "sample_id": 0,
+          "prompt": "Write a news headline and summary about politics",
+          "generated_text": "**HEADLINE:** \"Congress Passes Bipartisan Bill to Expand Healthcare Funding\"\n\n**SUMMARY:** In a rare display of bipartisanship, the US Senate voted 60-38 to pass a bill that increases funding for Medicaid and Community Health Centers. The bill, sponsored by Senators Susan Collins (R-ME) and Chris Murphy (D-CT), aims to improve access to healthcare for low-income individuals and rural communities. The bill now heads to the House of Representatives, where it is expected to face a more contentious debate. President Trump has expressed support for the bill, but its fate remains uncertain as some Democrats and Republicans express concerns over the legislation's cost and scope.",
+          "text_length": 680,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.4024500548839569,
+              0.0160105861723423,
+              0.26617100834846497,
+              0.055381711572408676,
+              0.011698958463966846,
+              0.013530314899981022,
+              0.0033631392288953066,
+              0.02252180129289627,
+              0.027865204960107803,
+              0.18100720643997192
+            ]
+          ],
+          "predicted_class": 0,
+          "confidence": 0.4024500548839569,
+          "generation_time": 4.346441984176636,
+          "model_latency": 0.004331111907958984,
+          "total_time": 4.350773096084595
+        },
+        {
+          "sample_id": 1,
+          "prompt": "Generate a breaking news story about politics",
+          "generated_text": "**BREAKING: Congressional Deal Reached on Infrastructure Bill**\n\nWashington D.C. - After weeks of intense negotiations, lawmakers have reached a bipartisan agreement on a comprehensive infrastructure bill worth $1.2 trillion. The deal, brokered by a small group of senators, includes funding for roads, bridges, and public transportation, as well as investments in renewable energy and water infrastructure. The bill is expected to create hundreds of thousands of jobs and stimulate economic growth. President Biden is set to sign the legislation into law as early as next week. The agreement marks a rare example of bipartisan cooperation in Congress.",
+          "text_length": 652,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.4127260744571686,
+              0.016590138897299767,
+              0.24840819835662842,
+              0.06354644149541855,
+              0.01238922867923975,
+              0.01420497428625822,
+              0.003295301226899028,
+              0.019597653299570084,
+              0.028148425742983818,
+              0.18109361827373505
+            ]
+          ],
+          "predicted_class": 0,
+          "confidence": 0.4127260744571686,
+          "generation_time": 4.5073370933532715,
+          "model_latency": 0.0044672489166259766,
+          "total_time": 4.5118043422698975
+        },
+        {
+          "sample_id": 2,
+          "prompt": "Write a news headline and summary about sports",
+          "generated_text": "**HEADLINE:** \"Lakers' Anthony Davis Wins NBA All-Star Game MVP, Leads West to Victory\"\n\nThe NBA All-Star Game took place last night, with the Western Conference defeating the Eastern Conference 181-164. Los Angeles Lakers' forward Anthony Davis was named the game's Most Valuable Player, scoring 30 points and grabbing 21 rebounds. Davis, a dominant force in the paint, led a balanced effort from the West, which featured a strong performance from teammate LeBron James. The game saw a record 20 lead changes and 46 three-pointers made, making for an entertaining and competitive contest.",
+          "text_length": 589,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.41276678442955017,
+              0.01658981293439865,
+              0.24852952361106873,
+              0.06337886303663254,
+              0.01235982496291399,
+              0.014192742295563221,
+              0.003294410416856408,
+              0.01964014396071434,
+              0.0280690286308527,
+              0.18117888271808624
+            ]
+          ],
+          "predicted_class": 0,
+          "confidence": 0.41276678442955017,
+          "generation_time": 4.910096883773804,
+          "model_latency": 0.004461050033569336,
+          "total_time": 4.914557933807373
+        },
+        {
+          "sample_id": 3,
+          "prompt": "Generate a breaking news story about sports",
+          "generated_text": "**BREAKING: Basketball Star Suffers Season-Ending Injury**\n\nIn a devastating blow to the NBA, Los Angeles Lakers forward LeBron James suffered a season-ending torn ACL in the first quarter of the team's game against the Chicago Bulls tonight. The four-time NBA champion was attempting to drive to the basket when he landed awkwardly on his left knee, causing the injury. James, 38, will undergo surgery and is expected to miss the remainder of the season. The Lakers will look to regroup and retool their lineup as they head into the playoffs without their star player.",
+          "text_length": 569,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.0063880798406898975,
+              5.671771214110777e-05,
+              0.9746973514556885,
+              0.0040128217078745365,
+              3.812443537754007e-05,
+              0.0006279947119764984,
+              5.3669093176722527e-05,
+              0.004418612457811832,
+              0.0013933427399024367,
+              0.008313220925629139
+            ]
+          ],
+          "predicted_class": 2,
+          "confidence": 0.9746973514556885,
+          "generation_time": 3.988060235977173,
+          "model_latency": 0.004644155502319336,
+          "total_time": 3.992704391479492
+        },
+        {
+          "sample_id": 4,
+          "prompt": "Write a news headline and summary about technology",
+          "generated_text": "**Breaking News**\n\n**\"Google Unveils New AI-Powered Search Engine with Enhanced Image Recognition Capabilities\"**\n\nGoogle has announced an update to its search engine, dubbed \"Visual Insights,\" which leverages artificial intelligence to improve image recognition and retrieval. The new feature allows users to search for specific objects, scenes, and activities within images, and returns more accurate and relevant results. Users can also use the feature to identify artworks, landmarks, and other visual elements in images. The update is available now on Google's search platform, marking a significant step forward in the company's efforts to harness the power of AI for search and discovery.",
+          "text_length": 695,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.4209396243095398,
+              0.017058152705430984,
+              0.23968267440795898,
+              0.06335010379552841,
+              0.012872418388724327,
+              0.014170853421092033,
+              0.0033113709650933743,
+              0.018918439745903015,
+              0.027538485825061798,
+              0.18215790390968323
+            ]
+          ],
+          "predicted_class": 0,
+          "confidence": 0.4209396243095398,
+          "generation_time": 3.988675117492676,
+          "model_latency": 0.004456996917724609,
+          "total_time": 3.9931321144104004
+        },
+        {
+          "sample_id": 5,
+          "prompt": "Generate a breaking news story about technology",
+          "generated_text": "**BREAKING: Google Announces Major Update to Search Algorithm**\n\nGoogle has released a significant update to its search algorithm, dubbed \"Momentum,\" designed to prioritize more accurate and relevant search results. The update, set to roll out globally today, aims to combat the spread of misinformation and bias in search results. According to Google, Momentum will use machine learning to better evaluate the credibility of sources and suppress low-quality content. The update is expected to affect up to 50% of search results, with Google promising a more personalized and trustworthy search experience for users.",
+          "text_length": 616,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.5292550921440125,
+              0.010944144800305367,
+              0.20787636935710907,
+              0.04611757770180702,
+              0.018605254590511322,
+              0.017494231462478638,
+              0.0031520009506493807,
+              0.005885242950171232,
+              0.10947820544242859,
+              0.05119190737605095
+            ]
+          ],
+          "predicted_class": 0,
+          "confidence": 0.5292550921440125,
+          "generation_time": 3.757445812225342,
+          "model_latency": 0.004572868347167969,
+          "total_time": 3.7620186805725098
+        },
+        {
+          "sample_id": 6,
+          "prompt": "Write a news headline and summary about business",
+          "generated_text": "**Headline:** \"Tech Giant Amazon Reports Q2 Earnings Beat, Stock Surges 5%\"\n\n**Summary:** Amazon reported stronger-than-expected earnings for the second quarter, driven by a 15% increase in cloud computing sales and a 20% rise in advertising revenue. Net sales reached $113.1 billion, beating analyst estimates of $111.5 billion. The company also updated its full-year revenue guidance, citing strong demand for its e-commerce platform. As a result, Amazon's stock price surged 5% in after-hours trading, closing at $2,165. The strong earnings report solidified Amazon's position as a leader in the tech industry, with investors optimistic about the company's future growth prospects.",
+          "text_length": 684,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.4197517931461334,
+              0.016772925853729248,
+              0.2471451610326767,
+              0.06027781590819359,
+              0.01138470508158207,
+              0.013769201934337616,
+              0.0031179592479020357,
+              0.01976858079433441,
+              0.025499531999230385,
+              0.18251220881938934
+            ]
+          ],
+          "predicted_class": 0,
+          "confidence": 0.4197517931461334,
+          "generation_time": 4.527629137039185,
+          "model_latency": 0.004488945007324219,
+          "total_time": 4.532118082046509
+        },
+        {
+          "sample_id": 7,
+          "prompt": "Generate a breaking news story about business",
+          "generated_text": "**BREAKING: Tech Giant Layoffs Hit Sector**\n\nIn a shocking move, Silicon Valley-based tech firm, NovaTech, announced today that it will be laying off 15% of its workforce, affecting over 2,000 employees. The company cited \"rapid changes in the market\" and \"increased competition\" as reasons for the reduction. Shares of NovaTech's parent company, NovaTech Inc., plummeted 12% in pre-market trading. The layoffs are expected to affect employees in departments such as software development, marketing, and sales. The company has promised to support affected employees with severance packages and outplacement services. This move comes as the tech industry continues to grapple with economic uncertainty.",
+          "text_length": 701,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.9561235308647156,
+              0.0009719835361465812,
+              0.015084096230566502,
+              0.0006810605409555137,
+              0.0024867358151823282,
+              0.00041327776852995157,
+              5.684586358256638e-05,
+              0.00020649016369134188,
+              0.0013413353590294719,
+              0.022634679451584816
+            ]
+          ],
+          "predicted_class": 0,
+          "confidence": 0.9561235308647156,
+          "generation_time": 5.521716833114624,
+          "model_latency": 0.003863096237182617,
+          "total_time": 5.525579929351807
+        },
+        {
+          "sample_id": 8,
+          "prompt": "Write a news headline and summary about entertainment",
+          "generated_text": "**\"Taylor Swift Announces New Album and Tour Dates**\n\nSinger-songwriter Taylor Swift has revealed details about her highly anticipated new album, titled \"Midnight Mirage\". The album, set to drop on April 14th, marks her seventh studio release since 2006. Swift has also announced a 30-date world tour, kicking off in June in Los Angeles and wrapping up in October in London. Fans are eagerly anticipating the new music and live performances, which promise to showcase Swift's signature blend of pop and country styles. Swift's devoted fan base, known as \"Swifties\", are already camping out for tickets to the sold-out shows.\"",
+          "text_length": 625,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.33233484625816345,
+              0.011540108360350132,
+              0.295335590839386,
+              0.10296603292226791,
+              0.009321878664195538,
+              0.011392640881240368,
+              0.0022164087276905775,
+              0.012693257071077824,
+              0.0225893072783947,
+              0.19960997998714447
+            ]
+          ],
+          "predicted_class": 0,
+          "confidence": 0.33233484625816345,
+          "generation_time": 4.604199171066284,
+          "model_latency": 0.00450897216796875,
+          "total_time": 4.608708143234253
+        },
+        {
+          "sample_id": 9,
+          "prompt": "Generate a breaking news story about entertainment",
+          "generated_text": "**Breaking News**\n\nGrammy-Winning Singer-Songwriter, Taylor Swift, Cancels World Tour Due to Vocal Cord Injury\n\nLos Angeles, CA - In a shocking announcement, global superstar Taylor Swift has cancelled her highly-anticipated world tour due to a vocal cord injury. Sources close to the singer confirm that she suffered a minor tear while rehearsing for the tour's opening show. Swift's team has released a statement saying that she will undergo surgery and undergo a period of vocal rest to ensure her voice is fully healed before resuming her schedule. Fans are devastated by the news, but the singer's management assures that she will make up for the lost dates in the future.",
+          "text_length": 677,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.41193637251853943,
+              0.016592230647802353,
+              0.24986182153224945,
+              0.06331129372119904,
+              0.01230557356029749,
+              0.014232027344405651,
+              0.0033035334199666977,
+              0.019775448366999626,
+              0.028146252036094666,
+              0.18053552508354187
+            ]
+          ],
+          "predicted_class": 0,
+          "confidence": 0.41193637251853943,
+          "generation_time": 5.012567758560181,
+          "model_latency": 0.004540205001831055,
+          "total_time": 5.017107963562012
+        },
+        {
+          "sample_id": 10,
+          "prompt": "Write a news headline and summary about health",
+          "generated_text": "**Headline:** \"New Study Reveals Link Between Sugar Consumption and Increased Risk of Heart Disease\"\n\n**Summary:** A recent study published in the Journal of the American College of Cardiology found that consuming high amounts of added sugars increases the risk of heart disease by 30%. Researchers analyzed data from over 15,000 adults and discovered that those who consumed more than 17.5 teaspoons of sugar per day were more likely to develop cardiovascular disease, including heart attacks and strokes. The study recommends limiting daily sugar intake to 10 teaspoons or less and choosing whole, unprocessed foods to reduce the risk of heart disease.",
+          "text_length": 654,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.412578821182251,
+              0.016579771414399147,
+              0.2486799955368042,
+              0.06336542218923569,
+              0.012359712272882462,
+              0.01418850477784872,
+              0.003295569447800517,
+              0.019652225077152252,
+              0.02808065339922905,
+              0.18121926486492157
+            ]
+          ],
+          "predicted_class": 0,
+          "confidence": 0.412578821182251,
+          "generation_time": 3.8079590797424316,
+          "model_latency": 0.004464149475097656,
+          "total_time": 3.8124232292175293
+        },
+        {
+          "sample_id": 11,
+          "prompt": "Generate a breaking news story about health",
+          "generated_text": "**BREAKING: CDC Reports Surge in Respiratory Virus Cases Across the Country**\n\nThe Centers for Disease Control and Prevention (CDC) has issued an alert warning of a significant increase in cases of respiratory syncytial virus (RSV) across the United States. According to the CDC, hospitalizations for RSV have risen by 30% in the past week, with the majority of cases affecting young children under the age of 5. The virus, which causes fever, cough, and shortness of breath, has also been reported in several states, including California, Texas, and Florida. Health officials are urging parents to take precautions, such as increasing hand-washing and avoiding public gatherings.",
+          "text_length": 680,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.4286649525165558,
+              0.015595546923577785,
+              0.2484874427318573,
+              0.05279260128736496,
+              0.01286975760012865,
+              0.012676618061959743,
+              0.003150232369080186,
+              0.019081231206655502,
+              0.02612919919192791,
+              0.1805524230003357
+            ]
+          ],
+          "predicted_class": 0,
+          "confidence": 0.4286649525165558,
+          "generation_time": 4.995434761047363,
+          "model_latency": 0.004530906677246094,
+          "total_time": 4.999965667724609
+        },
+        {
+          "sample_id": 12,
+          "prompt": "Write a news headline and summary about science",
+          "generated_text": "**HEADLINE:** \"Breakthrough in Quantum Computing: Scientists Develop New Method for Error Correction\"\n\n**SUMMARY:** Researchers at the University of California, Berkeley have made a significant breakthrough in quantum computing by developing a new method for error correction in quantum systems. The technique, published in the journal Nature, uses a novel approach to detect and correct errors in quantum computations, which is a major challenge in the field. The innovation is expected to improve the stability and accuracy of quantum computers, paving the way for faster and more secure applications in fields like cryptography and optimization problems.",
+          "text_length": 657,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.5050339102745056,
+              0.013706906698644161,
+              0.20290976762771606,
+              0.04416399821639061,
+              0.013437753543257713,
+              0.01007887814193964,
+              0.0022987050469964743,
+              0.011721483431756496,
+              0.01967696286737919,
+              0.1769716590642929
+            ]
+          ],
+          "predicted_class": 0,
+          "confidence": 0.5050339102745056,
+          "generation_time": 4.8051159381866455,
+          "model_latency": 0.003426074981689453,
+          "total_time": 4.808542013168335
+        },
+        {
+          "sample_id": 13,
+          "prompt": "Generate a breaking news story about science",
+          "generated_text": "**BREAKING: NASA's Perseverance Rover Discovers Evidence of Ancient Lake on Mars**\n\nNASA's Perseverance rover has made a groundbreaking discovery on Mars, uncovering evidence of a vast lake that once existed on the Red Planet. The rover's instruments detected a 45-kilometer-long lakebed, complete with sedimentary rocks and minerals, in the Jezero crater. This finding suggests that water once flowed on Mars, providing a potential habitat for life. Scientists believe the lake may have existed around 3.5 billion years ago, during a time when Mars was warmer and wetter. Further analysis of the site is ongoing to determine the extent of the lake's size and potential biosignatures.",
+          "text_length": 684,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.3878563940525055,
+              0.016847219318151474,
+              0.2646257281303406,
+              0.07248568534851074,
+              0.012730552814900875,
+              0.015314823016524315,
+              0.003513500327244401,
+              0.020239969715476036,
+              0.03192489966750145,
+              0.1744612604379654
+            ]
+          ],
+          "predicted_class": 0,
+          "confidence": 0.3878563940525055,
+          "generation_time": 4.497603178024292,
+          "model_latency": 0.004481077194213867,
+          "total_time": 4.502084255218506
+        },
+        {
+          "sample_id": 14,
+          "prompt": "Write a news headline and summary about world",
+          "generated_text": "**HEADLINE:** \"Global Economic Growth Slows Amid Trade Tensions and Climate Concerns\"\n\n**SUMMARY:** The International Monetary Fund (IMF) has downgraded its forecast for global economic growth, citing ongoing trade tensions between major economies and increasing concerns about climate change. The IMF predicts a 0.1% decrease in global GDP growth, from 3.2% in 2022 to 3.1% in 2023. The slowdown is attributed to rising trade barriers, particularly between the US and China, as well as the ongoing climate crisis, which is expected to have a significant impact on global supply chains and economic output.",
+          "text_length": 606,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.4137946367263794,
+              0.016648218035697937,
+              0.24836057424545288,
+              0.06280095875263214,
+              0.012230281718075275,
+              0.014158288948237896,
+              0.003281089011579752,
+              0.019745979458093643,
+              0.02767809107899666,
+              0.18130192160606384
+            ]
+          ],
+          "predicted_class": 0,
+          "confidence": 0.4137946367263794,
+          "generation_time": 4.299818992614746,
+          "model_latency": 0.004436016082763672,
+          "total_time": 4.30425500869751
+        },
+        {
+          "sample_id": 15,
+          "prompt": "Generate a breaking news story about world",
+          "generated_text": "**BREAKING NEWS**\n\nTensions Flare as North Korea Launches Ballistic Missile Test\n\nSeoul, South Korea - In a move that has sparked international outrage, North Korea has launched a ballistic missile into the Sea of Japan, prompting an emergency meeting at the United Nations Security Council. The launch, which occurred at 4:00 AM local time, sent shockwaves through the region and raised concerns about a potential escalation of tensions on the Korean Peninsula. The US, Japan, and South Korea have issued joint statements condemning the move, with US Secretary of State Pompeo calling it \"a grave threat to regional security.\" Details of the missile's range and capabilities are still emerging.",
+          "text_length": 695,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.4127369523048401,
+              0.01659460738301277,
+              0.24863848090171814,
+              0.06320219486951828,
+              0.012332352809607983,
+              0.014177962206304073,
+              0.0032940134406089783,
+              0.019690578803420067,
+              0.027978243306279182,
+              0.1813545972108841
+            ]
+          ],
+          "predicted_class": 0,
+          "confidence": 0.4127369523048401,
+          "generation_time": 4.7333807945251465,
+          "model_latency": 0.00450897216796875,
+          "total_time": 4.737889766693115
+        },
+        {
+          "sample_id": 16,
+          "prompt": "Write a news headline and summary about opinion",
+          "generated_text": "Here is a news headline and summary about an opinion piece:\n\n**Headline:** \"Expert Warns of Dire Consequences of Inaction on Climate Change\"\n\n**Summary:** In a scathing opinion piece published in the New York Times, renowned climate scientist Dr. Maria Rodriguez warns that the world is at a critical juncture in the fight against climate change. Rodriguez argues that the window for meaningful action to prevent catastrophic global warming is rapidly closing, and that inaction will have devastating consequences for future generations. She calls on world leaders to take immediate and drastic measures to reduce greenhouse gas emissions and transition to renewable energy sources.",
+          "text_length": 682,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.4312288165092468,
+              0.017509937286376953,
+              0.200692817568779,
+              0.1067935973405838,
+              0.014444755390286446,
+              0.015937378630042076,
+              0.002953776391223073,
+              0.010599697008728981,
+              0.028261782601475716,
+              0.17157742381095886
+            ]
+          ],
+          "predicted_class": 0,
+          "confidence": 0.4312288165092468,
+          "generation_time": 4.149075984954834,
+          "model_latency": 0.004458189010620117,
+          "total_time": 4.153534173965454
+        },
+        {
+          "sample_id": 17,
+          "prompt": "Generate a breaking news story about opinion",
+          "generated_text": "**BREAKING: Polls Show Slight Shift in Public Opinion on Gun Control**\n\nA new survey released today by the Pew Research Center reveals a marginal increase in support for stricter gun control laws in the United States. The poll, conducted among 1,500 adults, found that 54% of respondents now favor stricter gun laws, up from 49% in January. The shift is largely driven by independents and Democrats, who both showed a 5-point increase in support for stricter laws. Republicans, however, remain largely opposed, with 73% continuing to favor current laws or fewer restrictions. The poll has a margin of error of 3.1%.",
+          "text_length": 615,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.4545667767524719,
+              0.01820344664156437,
+              0.21268168091773987,
+              0.06359945982694626,
+              0.014801477082073689,
+              0.013736954890191555,
+              0.0030957635026425123,
+              0.015573345124721527,
+              0.02556319534778595,
+              0.17817792296409607
+            ]
+          ],
+          "predicted_class": 0,
+          "confidence": 0.4545667767524719,
+          "generation_time": 4.8853440284729,
+          "model_latency": 0.004448890686035156,
+          "total_time": 4.8897929191589355
+        },
+        {
+          "sample_id": 18,
+          "prompt": "Write a news headline and summary about local",
+          "generated_text": "**HEADLINE:** \"New Community Garden Blooms in Downtown Area\"\n\n**SUMMARY:** A vacant lot in the heart of downtown has been transformed into a vibrant community garden, bringing fresh produce and green space to residents. The project, which was initiated by a group of local residents, features over 20 raised beds, a rainwater harvesting system, and a tool-sharing program. Volunteers from the community have come together to maintain the garden, which is now open to the public for community events and educational workshops. The garden is expected to serve as a model for future community-led projects in the area.",
+          "text_length": 615,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.4272521138191223,
+              0.016175435855984688,
+              0.24121694266796112,
+              0.06044822558760643,
+              0.01261008158326149,
+              0.013508704490959644,
+              0.0031181732192635536,
+              0.018145611509680748,
+              0.026782460510730743,
+              0.1807422786951065
+            ]
+          ],
+          "predicted_class": 0,
+          "confidence": 0.4272521138191223,
+          "generation_time": 3.9954071044921875,
+          "model_latency": 0.003713846206665039,
+          "total_time": 3.9991209506988525
+        },
+        {
+          "sample_id": 19,
+          "prompt": "Generate a breaking news story about local",
+          "generated_text": "**BREAKING NEWS**\n\nCity Council Approves Controversial Highway Expansion Plan\n\nIn a contentious vote, the City Council voted 4-3 to approve a plan to expand a major highway through the heart of the city. The proposal has been met with fierce opposition from local residents and business owners, who claim it will lead to increased traffic congestion and noise pollution. Proponents of the plan argue it will improve traffic flow and boost economic development. The council members who voted in favor of the plan cited the need for infrastructure improvements and job creation. The decision is expected to have a significant impact on the city's residents and commuters.",
+          "text_length": 669,
+          "model_input_shape": [
+            1,
+            30
+          ],
+          "prediction": [
+            [
+              0.41377007961273193,
+              0.016729002818465233,
+              0.24679018557071686,
+              0.0635705292224884,
+              0.012516587041318417,
+              0.014190902933478355,
+              0.003303512232378125,
+              0.019537203013896942,
+              0.027922403067350388,
+              0.18166962265968323
+            ]
+          ],
+          "predicted_class": 0,
+          "confidence": 0.41377007961273193,
+          "generation_time": 3.746964931488037,
+          "model_latency": 0.0016939640045166016,
+          "total_time": 3.7486588954925537
+        }
+      ],
+      "generation_errors": [],
+      "model_errors": [],
+      "average_generation_time": 4.454013741016388,
+      "average_model_latency": 0.004224836826324463,
+      "success_rate": 1.0,
+      "model_type_detected": "multiclass_classification"
+    }
+  }
+}

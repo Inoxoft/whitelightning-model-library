@@ -1,0 +1,21 @@
+text,label,probability,predicted_label
+"""Hey, just wanted to say that I’m really impressed with the community guidelines here. I think everyone’s doing a great job keeping things respectful, and I’m happy to be a part of it.""",0,[0.00090488],0
+"""I noticed some heated discussions in the forum today, but honestly, I think it’s just passionate debate. No harm done, right? Let’s keep the convo going!""",0,[0.00184524],0
+"""Yo, props to the mods for handling stuff. I ain’t seen nothing outta line, and I’ve been scrolling for hours. Keep it clean, peeps!""",0,[0.02058663],0
+"""I’m not sure if this is the right place to mention, but I feel everything’s been pretty fair around here. No complaints from me, just my two cents.""",0,[0.3494387],0
+"""Gotta say, the vibe in this group is solid. Sure, there’s some back-and-forth, but it’s all good-natured ribbing. No need for flags or anything.""",0,[0.96458447],1
+"""I reckon the chat’s been mostly chill. There was a lil’ shade thrown earlier, but it didn’t cross no lines in my book. We’re cool.""",0,[0.01737348],0
+"""Just dropping a note to say I appreciate how folks are managing to disagree without getting nasty. It’s a rare thing online these days!""",0,[0.00365175],0
+"""I’ve been lurkin’ here for a bit, and I ain’t caught wind of any real drama. Maybe I missed it, but seems like everyone’s playing nice enough.""",0,[0.99291807],1
+"""Not gonna lie, some posts got me raising an eyebrow, but after a second read, I think it’s just banter. No biggie, let’s move on.""",0,[0.12940708],0
+"""I’m all for open dialogue, and from what I’ve seen, people are keepin’ it above board. No violations or anything to report here.""",0,[0.61263525],1
+"""Hey, just wanted to say that I noticed some people breaking the rules in the chat yesterday. Not pointing fingers, but maybe keep an eye out? Thought it was worth a mention.""",1,[4.26389597e-05],0
+"""I’m not sure if this counts, but someone shared content in the group that seemed a bit off, like it might not be allowed. Just putting it out there for review.""",1,[0.00073723],0
+"""Saw a post earlier that could be questionable. It’s not super obvious, but there’s a vibe that doesn’t sit right with the guidelines. Worth a check, maybe?""",1,[0.08733067],0
+"""Not trying to cause drama, but there’s a user dropping hints about stuff that’s probably against the terms. It’s subtle, coded language, but it’s there if you read between the lines.""",1,[0.99168253],1
+"""I think there’s a convo in the forum that’s skating on thin ice. They’re using weird slang, but I’m pretty sure it’s about something not allowed. Just FYI.""",1,[0.05440748],0
+"""Just a heads-up, there’s a thread where folks are ‘joking’ about breaking the rules. Might be harmless, but it feels like they’re testing the boundaries a bit.""",1,[0.02930309],0
+"""Not 100% sure, but I caught a comment that might be pushing the limits of what’s okay here. It’s phrased casually, almost like a suggestion, but it’s sus.""",1,[7.31285909e-05],0
+"""There’s a user posting stuff that seems fine at first glance, but if you dig into their history, it’s clear they’re hinting at prohibited things. Tricky to spot, though.""",1,[0.93609256],1
+"""I stumbled on a message that’s probably against policy, but it’s written in such a roundabout way, like they’re trying to avoid getting flagged. Sneaky stuff.""",1,[0.90129173],1
+"""Just flagging a discussion that’s technically within bounds, I guess, but the undertone feels off. They’re talking in a way that could imply something rule-breaking.""",1,[0.29437974],0
