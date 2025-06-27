@@ -170,7 +170,7 @@ Perfect for ensuring your WhiteLightning models work consistently across all tar
 ## 📞 Support
 
 For questions or issues regarding the model library, please:
-- Open an issue in this repository
+- Open an issues in this repository
 - Contact the WhiteLightning team
 
 ## License
