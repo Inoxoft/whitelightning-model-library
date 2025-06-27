@@ -148,6 +148,25 @@ model_name/
 3. Add your model following the directory structure
 4. Submit a pull request with model description
 
+## ⚡  Main Repo
+
+[WhiteLightning](https://github.com/Inoxoft/whitelightning) distills massive, state-of-the-art language models into lightweight, hyper-efficient text classifiers. It's a command-line tool that lets you create specialized models that run anywhere—from the cloud to the edge—using the universal ONNX format for maximum compatibility.
+
+## 🌐 Documentation & Website
+
+Need comprehensive guides and documentation? Check out our [WhiteLightning Site](https://github.com/whitelightning-ai/whitelightning-site) - this repository hosts the official website for WhiteLightning at https://whitelightning.ai, a cutting-edge LLM distillation tool with detailed documentation, tutorials, and implementation guides.
+
+## 🧪 Testing & Validation
+
+Want to test your ONNX models across multiple programming languages? Check out our [WhiteLightning Test Framework](https://github.com/Inoxoft/whitelightning) - a comprehensive cross-language testing suite that validates your models in:
+
+* **8 Programming Languages**: Python, Java, C++, C, Node.js, Rust, Dart, and Swift
+* **Performance Benchmarking**: Detailed timing, memory usage, and throughput analysis
+* **Automated Testing**: GitHub Actions workflows for continuous validation
+* **Real-world Scenarios**: Test with custom inputs and edge cases
+
+Perfect for ensuring your WhiteLightning models work consistently across all target platforms and deployment environments.
+
 ## 📞 Support
 
 For questions or issues regarding the model library, please:
