@@ -20,9 +20,12 @@ whitelightning-model-library/
 │   ├── hate_speech_classifier/
 │   ├── sentiment_classifier/
 │   └── spam_classifier/
-└── Multiclass/               # Multiclass classification models
-    ├── customer_review_topic/
-    └── news_topic_clf/
+├── Multiclass/               # Multiclass classification models
+│   ├── customer_review_topic/
+│   └── news_topic_clf/
+└── Multiclass(Sigmoid)/      # Multilabel classification models
+    ├── emotion_classifier/
+    └── news_multilabel/
 ```
 
 ## 🤖 Available Models
@@ -57,6 +60,22 @@ whitelightning-model-library/
 - **Type**: Multiclass classification  
 - **Categories**: Business, Health, Politics, and more
 - **Files**: Model weights (.h5, .onnx), training data, vocabulary, scaler
+
+### Multilabel Classification Models (Sigmoid)
+
+#### 1. **Emotion Classifier**
+- **Purpose**: Detects multiple emotions in text simultaneously
+- **Type**: Multilabel classification with sigmoid activation
+- **Categories**: Fear, Happy, Love, Sadness
+- **Unique Feature**: Single text can belong to multiple emotion categories
+- **Files**: Model weights (.keras, .onnx), training data, vocabulary, scaler
+
+#### 2. **News Multilabel Classifier**
+- **Purpose**: Categorizes news articles into multiple topics simultaneously
+- **Type**: Multilabel classification with sigmoid activation
+- **Categories**: Business, Environment, Health, Politics, Sports, Technologies, Wars
+- **Unique Feature**: Single article can belong to multiple news categories
+- **Files**: Model weights (.keras, .onnx), training data, vocabulary, scaler
 
 ## 📁 Model Directory Structure
 
@@ -109,6 +128,8 @@ model_name/
    mkdir Binary/your_model_name/
    # or
    mkdir Multiclass/your_model_name/
+   # or
+   mkdir "Multiclass(Sigmoid)/your_model_name/"
    ```
 
 2. **Add required files**:
