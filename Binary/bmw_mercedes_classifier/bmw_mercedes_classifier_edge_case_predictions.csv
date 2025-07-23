@@ -1,0 +1,11 @@
+text,label,predicted_label
+"""I overheard someone at the garage talking about a sleek sedan with a star emblem, but they were mostly complaining about the repair costs of German cars in general.""",mercedes,mercedes
+"""My neighbor just got a new ride, something with a tri-pointed badge, though they keep calling it their 'fancy European cruiser' without mentioning the name.""",mercedes,mercedes
+"""At the car show, there was a silver beauty with an iconic grille design, but the owner kept talking about its 'luxury lineage' rather than the brand itself.""",mercedes,bmw
+"""I’m not sure, but I think the vehicle in that old movie had a subtle three-pointed symbol on the hood, though the scene focused more on its speed.""",mercedes,mercedes
+"""Someone at work mentioned their 'stately German auto' with a hint of pride, but they quickly changed the subject to discuss fuel efficiency instead.""",mercedes,bmw
+"""The car magazine hinted at a model with a star-like logo in their review, but the article was buried under pages of other European manufacturers.""",mercedes,mercedes
+"""A friend described their new purchase as a 'symbol of engineering elegance,' and I only later noticed the tiny emblem on their keychain.""",mercedes,mercedes
+"""In the parking lot, I spotted a vehicle with a vaguely familiar crest, but the owner was raving about its smooth ride without dropping any specific names.""",mercedes,mercedes
+"""The forum post rambled about a 'premium Stuttgart creation' before diving into unrelated tire brands, leaving me guessing about the exact maker.""",mercedes,mercedes
+"""During the conversation, they casually mentioned a 'three-starred legacy' while mostly focusing on the leather interior and road handling.""",mercedes,mercedes

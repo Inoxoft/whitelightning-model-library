@@ -1,0 +1,11 @@
+text,label,probability,predicted_label
+"""I’m not entirely thrilled with the car, but it gets me from point A to B. There are just a few minor issues like the occasional weird noise from the engine that I can’t quite figure out.""",bad,[0.00460797],0
+"""The vehicle is decent for the price, I suppose. Though, I’ve noticed the brakes feel a tad unresponsive at times, which is slightly concerning.""",bad,[0.00292735],0
+"""My ride’s alright for daily use, nothing spectacular. Gotta admit, the fuel efficiency isn’t what was advertised—kinda disappointing if you ask me.""",bad,[0.01707596],0
+"""This automobile performs adequately under normal conditions. However, there’s a subtle vibration at high speeds that might indicate a deeper mechanical flaw.""",bad,[0.00548849],0
+"""I’ve got mixed feelings about my new wheels. It looks great, sure, but the transmission seems to lag when shifting gears, which isn’t ideal.""",bad,[6.00283056e-06],0
+"""The car isn’t a total disaster, and I’ve seen worse. Still, the interior materials feel cheap and are already showing wear after just a few months.""",bad,[8.9365928e-09],0
+"""My motor vehicle is functional, no major complaints. That said, there’s an odd smell from the AC vents that I can’t ignore, even if it’s not a dealbreaker.""",bad,[0.69441992],1
+"""I can live with this auto for now—it’s not terrible. But between you and me, the suspension feels off, like it’s not handling bumps as it should.""",bad,[2.21577739e-06],0
+"""The machine I drive is passable for commuting purposes. Though, I must note the steering has a slight pull to one side, which is mildly unsettling.""",bad,[0.76172024],1
+"""My four-wheeler is okay, nothing to write home about. Just a heads-up, the dashboard warning light flickers sometimes for no apparent reason.""",bad,[2.15261252e-06],0
