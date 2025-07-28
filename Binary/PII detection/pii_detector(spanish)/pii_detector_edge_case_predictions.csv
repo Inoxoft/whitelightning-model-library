@@ -1,0 +1,21 @@
+text,label,probability,predicted_label
+"""Hablé con un amigo sobre cómo organizar una fiesta en un lugar llamado Calle del Sol, pero no mencioné ningún número de casa ni detalles específicos.""",0,[0.39371878],0
+"""Mi número favorito es el 123-456-789, lo uso siempre en juegos de mesa, no tiene nada que ver con datos personales.""",0,[0.66041267],1
+"""En el foro escribí algo como 'mi dirección es un misterio', solo bromeando, sin dar información real.""",0,[0.99672455],1
+"""Discutimos sobre seguridad de datos en la oficina, pero solo mencionamos términos generales como 'proteger info' sin ejemplos concretos.""",0,[0.94796681],1
+"""Escribí un cuento donde un personaje vive en la Avenida Imaginaria 123, claramente ficticia y sin relación con nadie real.""",0,[0.49796179],0
+"""Compartí un meme sobre tarjetas de crédito falsas con números inventados como 9999-8888-7777-6666, solo para reírme.""",0,[0.99994433],1
+"""Hice una referencia a un 'código secreto' en un chat, pero era sobre un videojuego, no sobre información personal.""",0,[0.10937325],0
+"""En una conversación mencioné 'mi lugar especial', pero me refería a un parque público, sin direcciones ni detalles privados.""",0,[0.01903998],0
+"""Hablé de un contacto telefónico, pero solo dije 'llámame al móvil', sin compartir ningún número real.""",0,[0.91962349],1
+"""En un correo escribí algo como 'envíame tu ubicación', pero era para un evento público y no pedí datos específicos.""",0,[0.98254007],1
+"""Mi número de contacto es algo así como nueve, uno, seis, dos, y luego unos dígitos más que no recuerdo bien, ja ja.""",1,[0.81424618],1
+"""Si necesitas enviarme algo, mi dirección es cerca de la calle principal, número 12 o algo por ahí, no estoy seguro.""",1,[0.99989849],1
+"""Creo que mi tarjeta tiene un código que empieza por 4 y termina en 9, pero no me hagas caso, es solo una suposición.""",1,[0.97985923],1
+"""En el formulario escribí un dato que podría ser mi identificación, algo como 123-45-6789, pero no estoy seguro si es correcto.""",1,[0.9999975],1
+"""Hablé con alguien y me pidió un dato personal, creo que era algo como cinco, cinco, cinco, y luego más números, pero no lo apunté.""",1,[0.03825803],0
+"""Mi dirección de correo tiene un número que parece un teléfono, como 5551234567, pero en realidad es solo parte del usuario.""",1,[0.99948853],1
+"""Recuerdo que mi código de seguridad tiene un par de dígitos repetidos, como 22 o 33, pero no te lo digo completo, claro.""",1,[0.9974255],1
+"""Si me mandas algo, busca una casa con un número parecido a 45 en una calle que no recuerdo bien, pero está en el centro.""",1,[0.00145776],0
+"""Un amigo me pidió un dato bancario, creo que era algo con 16 números, pero solo le di los primeros cuatro: 5432.""",1,[0.74020469],1
+"""En un chat mencioné un dato que podría ser mi número de seguro, pero lo escribí como un código random: 987-65-4321.""",1,[0.99999553],1

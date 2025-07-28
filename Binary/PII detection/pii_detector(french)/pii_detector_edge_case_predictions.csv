@@ -1,0 +1,21 @@
+text,label,probability,predicted_label
+"""Je vais vous donner mon numéro de compte pour le paiement, mais seulement si vous me confirmez par écrit. Est-ce acceptable ?""",0,[0.99520308],1
+"""L’adresse que vous cherchez est peut-être celle du bureau principal, mais je ne suis pas sûr. Voulez-vous que je vérifie ?""",0,[0.98325014],1
+"""Mon identifiant client est un peu compliqué, mais je peux vous l’envoyer par un autre moyen si nécessaire.""",0,[0.96884936],1
+"""Je pense que les informations de contact sont dans le dossier, mais je ne vais pas les mentionner ici pour des raisons de sécurité.""",0,[0.01191113],0
+"""Le code de référence ressemble à un numéro de sécurité, mais ce n’est qu’un identifiant interne pour notre système.""",0,[0.99409044],1
+"""Si vous avez besoin de mes coordonnées, je peux les fournir lors d’un appel sécurisé, mais pas par écrit.""",0,[0.93480211],1
+"""Le numéro que vous demandez est lié à une transaction, mais je ne suis pas à l’aise de le partager sans validation.""",0,[0.99207294],1
+"""Je crois que l’adresse complète est enregistrée quelque part, mais je ne vais pas la divulguer sans autorisation.""",0,[0.92245537],1
+"""Mon identifiant unique est masqué pour des raisons de confidentialité, mais je peux donner un indice si cela aide.""",0,[0.99733281],1
+"""Les détails personnels sont cryptés dans notre base, donc je ne peux pas les révéler directement ici.""",0,[0.00099353],0
+"""Je ne suis pas sûr, mais il me semble que mon numéro de compte est quelque chose comme 1234-5678-9012-3456. Enfin, je vérifierai plus tard.""",1,[0.99974585],1
+"""Dans un vieux carnet, j’ai retrouvé une note avec des chiffres qui pourraient être un ancien numéro de sécurité sociale : 1 23 45 678 901 234. Bizarre, non ?""",1,[0.86763215],1
+"""Hier, en discutant, un ami m’a donné ce qui ressemble à un code, peut-être une adresse ou un truc du genre : 12 rue des Lilas, 75001. Je ne sais pas à quoi ça correspond.""",1,[0.01231179],0
+"""Dans un jeu de rôle en ligne, mon perso a un 'identifiant unique' qui ressemble à un numéro de carte : 4567-8901-2345-6789. C’est drôle, on dirait un vrai !""",1,[0.99745274],1
+"""J’ai noté un truc sur un post-it, un genre de référence, je crois que c’est 06.12.34.56.78. Faut que je me rappelle pourquoi j’ai écrit ça.""",1,[0.99950922],1
+"""En lisant un vieux mail, je tombe sur une ligne étrange : 'contacte-moi au 01-23-45-67-89'. Est-ce vraiment un numéro ou juste un code ?""",1,[0.98039114],1
+"""Dans un manuel technique, ils donnent un exemple de format de données : numéro client 9876 5432 1098 7654. Ça ressemble à une carte, mais c’est juste une démo.""",1,[0.99726135],1
+"""Quelqu’un a griffonné sur un bout de papier un truc comme 'adresse pro : 45 avenue Victor Hugo, 75016'. Je ne sais même pas si c’est à moi.""",1,[0.86890721],1
+"""Dans une conversation cryptée, un contact a mentionné un 'identifiant temporaire' : 2-78-90-123-456. Ça pourrait être n’importe quoi, non ?""",1,[0.75667566],1
+"""J’ai trouvé dans mes archives un document avec une référence obscure : 'ID perso 567.89.012.345.6'. Ça date d’il y a des années, aucune idée de ce que c’est.""",1,[0.31597087],0

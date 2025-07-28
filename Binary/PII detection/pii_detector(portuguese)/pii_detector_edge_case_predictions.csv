@@ -1,0 +1,21 @@
+text,label,probability,predicted_label
+"""Eu moro perto de um lugar chamado Rua das Flores, mas não vou te dizer o número da casa, hein! É só um bairro tranquilo.""",0,[0.00116236],0
+"""Meu contato? Ah, pode me ligar no número que começa com 9, mas não vou falar o resto aqui, tá bom?""",0,[0.11138858],0
+"""Comprei um cartão novo no banco, mas fico tranquilo porque não guardo o código de segurança por escrito em lugar nenhum.""",0,[0.00193465],0
+"""Minha identificação no sistema da empresa é algo como funcionário-123, mas isso não quer dizer nada sobre mim, né?""",0,[0.01349865],0
+"""Moro numa área com CEP começando por 01, mas não faço ideia do resto, juro que nunca decorei isso!""",0,[0.12928934],0
+"""Tenho um número de registro profissional, mas prefiro chamá-lo de 'código da sorte', nada de oficial por aqui.""",0,[0.36286762],0
+"""Meu endereço? Digamos que é perto de um ponto turístico famoso, mas não vou desenhar o mapa, tá?""",0,[5.05379467e-05],0
+"""Se precisar me achar, é só saber que estou na zona sul, nada mais específico que isso, beleza?""",0,[0.00055046],0
+"""Minha conta no banco tem um número longo, mas eu só lembro que termina com 7, o resto é mistério até pra mim.""",0,[0.02170953],0
+"""Eu tenho um documento importante começando com RG, mas não vou falar mais que isso, só sei que tá guardado.""",0,[0.00377579],0
+"""Meu novo cartão chegou, mas não vou compartilhar os detalhes aqui. Só digo que começa com 4 e tem mais uns números depois.""",1,[0.00081325],0
+"""Preciso atualizar meu cadastro no sistema, então anotei meu CPF em um papelzinho: onze dígitos, sabe como é, não confio na memória.""",1,[0.01237534],0
+"""Estou organizando meus documentos e vi que meu RG é de um estado que nem moro mais, engraçado como a vida muda.""",1,[1.98138368e-05],0
+"""Mandei uma mensagem pro suporte com meu número de contato, aquele que termina em 9876, espero que resolvam logo.""",1,[0.64970028],1
+"""No formulário, pediram um identificador único, então coloquei uma sequência que só eu sei o que significa, começa com 123.""",1,[5.46435003e-05],0
+"""Comentei com um amigo sobre um código importante da minha conta, mas só dei a dica que tem 16 algarismos, nada além disso.""",1,[5.5040804e-05],0
+"""Minha nova residência fica naquela rua famosa, número 123, mas não vou dizer mais que isso porque, né, privacidade.""",1,[0.88322389],1
+"""Troquei mensagens sobre um pedido online e mencionei que o rastreio tem uns números tipo 4567 no final, só pra referência.""",1,[0.00443708],0
+"""Estava preenchendo um contrato e notei que o campo de identificação tem espaço pra 9 dígitos, igual ao meu documento antigo.""",1,[0.00132254],0
+"""Contei pra minha irmã que meu contato telefônico mudou, agora começa com 11 e tem uns dígitos a mais, mas não dei tudo.""",1,[0.01172752],0

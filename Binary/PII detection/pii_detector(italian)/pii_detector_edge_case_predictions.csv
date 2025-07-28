@@ -1,0 +1,21 @@
+text,label,probability,predicted_label
+"""Ho trovato un vecchio biglietto da visita con un numero che sembra un codice, ma non è associato a nessuna persona. Potrebbe essere solo un riferimento interno, tipo 123-456-789.""",0,[0.10512312],0
+"""Nella documentazione del progetto c'è una sequenza numerica che potrebbe sembrare un identificativo, ma è solo un codice di riferimento per il software: 987654321.""",0,[2.67130818e-05],0
+"""Ho scritto un racconto di fantasia in cui un personaggio vive in 'Via Immaginaria 123', ma è chiaramente un luogo inventato per la storia.""",0,[1.39914582e-05],0
+"""Stavo leggendo un manuale tecnico e c'era un esempio di formato per numeri di serie, tipo 12-34-56-78-90, ma non è legato a nessuno in particolare.""",0,[0.02514959],0
+"""In una chat di gioco online, qualcuno ha condiviso un codice di accesso per una stanza virtuale, qualcosa come 555-123-456, ma non ha nulla a che fare con dati personali.""",0,[0.00029853],0
+"""Ho annotato un codice di spedizione di un pacco, tipo IT-12345-XYZ, ma non contiene informazioni su chi lo ha inviato o ricevuto.""",0,[0.86360085],1
+"""In un forum di programmazione, qualcuno ha postato un esempio di dato fittizio per testare un algoritmo: 'utente_001, codice 123456789'. È chiaramente un mock-up.""",0,[4.61464369e-05],0
+"""Ho trovato una vecchia ricevuta con un numero di transazione, 9876543210, ma non ci sono nomi o dettagli personali associati.""",0,[0.46110991],0
+"""Durante una lezione di matematica, il professore ha usato una sequenza numerica casuale, tipo 456-789-012, come esempio per un problema teorico.""",0,[2.96835842e-05],0
+"""In un libro di fantascienza, un personaggio usa un codice identificativo futuristico, 'ID-Galattico-567890', ma è ovviamente un'invenzione narrativa.""",0,[0.00058553],0
+"""Ho trovato un vecchio biglietto con scritto 'numero di riferimento per la carta: 4555-1234-5678-9012'. Non so a chi appartenga.""",1,[0.999475],1
+"""Mi hanno mandato un messaggio con un codice che sembra importante, tipo 'ID personale 123-45-6789'. Dovrei rispondere?""",1,[0.7912913],1
+"""In un forum ho letto un post strano, c'era scritto qualcosa come 'contatto diretto 335 12 34 567'. Qualcuno sa cosa significa?""",1,[0.00363423],0
+"""Ho un appunto sul telefono che dice 'indirizzo per la spedizione: Via Roma 12, 20121'. Non ricordo perché l’ho salvato.""",1,[0.9999342],1
+"""Qualcuno ha lasciato un foglio con una sequenza numerica lunga, tipo 'codice fiscale: ABCDEF12G34H567I'. Non so se sia rilevante.""",1,[0.00115325],0
+"""In un’email vecchia c’era scritto 'per confermare usa il numero 9876-5432-1098-7654'. Sembra un codice, ma non ne sono sicuro.""",1,[0.99205273],1
+"""Ho visto un annuncio con scritto 'chiama per info al tre tre zero uno due tre quattro cinque sei sette'. Strano modo di scriverlo.""",1,[0.00013769],0
+"""Un amico mi ha mandato un messaggio con 'il mio nuovo indirizzo è v. Garibaldi n. 5, cap 00100'. Non so se sia corretto.""",1,[0.00182174],0
+"""C’era una nota su un sito che diceva 'per accedere usa identificativo 1234567890123456'. Potrebbe essere un errore di battitura.""",1,[0.00381967],0
+"""In un gruppo ho letto 'il mio numero per emergenze è tre due otto sette sei cinque quattro tre due uno'. Sembra confuso.""",1,[0.00201233],0
